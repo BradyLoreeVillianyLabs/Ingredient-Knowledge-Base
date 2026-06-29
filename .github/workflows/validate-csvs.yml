@@ -28,6 +28,8 @@ jobs:
       - name: Check generated artifacts
         run: |
           test -s dist/ingredient_knowledge_base.sqlite
+          test -s dist/ingredient-knowledge-base-csv.zip
+          test -s dist/ingredient-knowledge-base-json.zip
           test -s data/generated/json/ingredients.json
           test -s data/generated/evidence_packs_index.json
           test -s docs/DATASET_REPORT.md
