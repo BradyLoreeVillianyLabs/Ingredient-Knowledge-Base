@@ -1,0 +1,31 @@
+combination_id,ingredient_ids,ingredient_names,combination_type,common_food_context,confidence,notes,review_status
+combo_0001,ing_wheat_flour|ing_water|ing_salt|ing_yeast,Wheat Flour|Water|Salt|Yeast,basic_formula,bread,high,Classic lean bread ingredient base,draft
+combo_0002,ing_wheat_flour|ing_sugar|ing_butter|ing_egg,Wheat Flour|Sugar|Butter|Egg,baking_base,cookies and cakes,high,Common sweet baked-good structure,draft
+combo_0003,ing_tomato_paste|ing_salt|ing_sugar|ing_vinegar,Tomato Paste|Salt|Sugar|Vinegar,sauce_base,ketchup and sauces,medium,Common sweet acidic tomato sauce pattern,draft
+combo_0004,ing_soybean_oil|ing_vinegar|ing_salt|ing_mustard,Soybean Oil|Vinegar|Salt|Mustard,dressing_base,salad dressings,medium,Oil acid salt emulsifier flavor base,draft
+combo_0005,ing_water|ing_sugar|ing_citric_acid|ing_natural_flavors,Water|Sugar|Citric Acid|Natural Flavors,beverage_base,soft drinks,medium,Common sweet acid flavor beverage structure,draft
+combo_0006,ing_water|ing_high_fructose_corn_syrup|ing_citric_acid|ing_natural_flavors,Water|High Fructose Corn Syrup|Citric Acid|Natural Flavors,beverage_base,soft drinks,medium,Common North American soft drink pattern,draft
+combo_0007,ing_corn_syrup|ing_sugar|ing_gelatin|ing_citric_acid,Corn Syrup|Sugar|Gelatin|Citric Acid,candy_base,gummies,medium,Sugar syrup gel acid candy pattern,draft
+combo_0008,ing_sugar|ing_cocoa_powder|ing_soy_lecithin|ing_vanilla,Sugar|Cocoa Powder|Soy Lecithin|Vanilla,chocolate_base,chocolate products,medium,Common chocolate-like ingredient set,draft
+combo_0009,ing_milk|ing_sugar|ing_cocoa_powder|ing_carrageenan,Milk|Sugar|Cocoa Powder|Carrageenan,dairy_drink_base,chocolate milk,medium,Milk sugar cocoa stabilizer pattern,draft
+combo_0010,ing_whey_protein|ing_soy_lecithin|ing_sucralose|ing_natural_flavors,Whey Protein|Soy Lecithin|Sucralose|Natural Flavors,protein_product_base,protein powders,medium,Common flavored protein powder pattern,draft
+combo_0011,ing_pea_protein|ing_sunflower_oil|ing_methylcellulose|ing_natural_flavors,Pea Protein|Sunflower Oil|Methylcellulose|Natural Flavors,plant_meat_base,plant-based meat,medium,Common plant meat texture and flavor stack,draft
+combo_0012,ing_modified_food_starch|ing_salt|ing_msg|ing_disodium_inosinate,Modified Food Starch|Salt|MSG|Disodium Inosinate,seasoning_base,instant noodles and snacks,medium,Common savory seasoning enhancer pattern,draft
+combo_0013,ing_potato|ing_sunflower_oil|ing_salt,Potato|Sunflower Oil|Salt,snack_base,potato chips,high,Simple potato chip base,draft
+combo_0014,ing_corn|ing_canola_oil|ing_salt,Corn|Canola Oil|Salt,snack_base,corn chips,medium,Simple fried corn snack pattern,draft
+combo_0015,ing_oats|ing_sugar|ing_canola_oil|ing_honey,Oats|Sugar|Canola Oil|Honey,cereal_base,granola,medium,Common oat cereal binder pattern,draft
+combo_0016,ing_rice|ing_sugar|ing_salt|ing_maltodextrin,Rice|Sugar|Salt|Maltodextrin,cereal_base,rice cereal snacks,medium,Common puffed cereal snack pattern,draft
+combo_0017,ing_milk|ing_cream|ing_sugar|ing_guar_gum,Milk|Cream|Sugar|Guar Gum,frozen_dessert_base,ice cream,medium,Dairy fat sugar stabilizer pattern,draft
+combo_0018,ing_water|ing_sugar|ing_pectin|ing_citric_acid,Water|Sugar|Pectin|Citric Acid,fruit_gel_base,jam and fruit snacks,medium,Sugar acid pectin gel system,draft
+combo_0019,ing_soy_sauce_powder|ing_msg|ing_disodium_guanylate|ing_garlic_powder,Soy Sauce Powder|MSG|Disodium Guanylate|Garlic Powder,savory_flavor_base,snack seasonings,medium,Umami seasoning stack,draft
+combo_0020,ing_salt|ing_sugar|ing_paprika|ing_garlic_powder,Salt|Sugar|Paprika|Garlic Powder,seasoning_base,rubs and snack seasoning,high,Common seasoning blend foundation,draft
+combo_0021,ing_wheat_flour|ing_calcium_propionate|ing_mono_diglycerides|ing_ssl,Wheat Flour|Calcium Propionate|Mono- and Diglycerides|Sodium Stearoyl Lactylate,industrial_bakery_base,packaged bread,medium,Preservative and dough conditioner pattern,draft
+combo_0022,ing_palm_oil|ing_sugar|ing_wheat_flour|ing_cocoa_powder,Palm Oil|Sugar|Wheat Flour|Cocoa Powder,processed_cookie_base,cookies and wafers,medium,Shelf-stable cookie pattern,draft
+combo_0023,ing_chicken|ing_salt|ing_sodium_phosphate|ing_natural_flavors,Chicken|Salt|Sodium Phosphate|Natural Flavors,processed_meat_base,prepared chicken,medium,Moisture and flavor processed meat pattern,needs_source
+combo_0024,ing_pork|ing_salt|ing_sodium_nitrite|ing_sugar,Pork|Salt|Sodium Nitrite|Sugar,cured_meat_base,bacon and ham,medium,Curing system pattern,needs_source
+combo_0025,ing_cabbage|ing_salt|ing_lactic_acid,Cabbage|Salt|Lactic Acid,fermentation_base,sauerkraut and kimchi,medium,Fermented cabbage acidification pattern,draft
+combo_0026,ing_cucumber|ing_vinegar|ing_salt|ing_dill,Cucumber|Vinegar|Salt|Dill,pickle_base,pickles,high,Common cucumber pickle pattern,draft
+combo_0027,ing_chickpeas|ing_sesame_seed|ing_lemon_juice|ing_garlic,Chickpeas|Sesame Seed|Lemon Juice|Garlic,culinary_base,hummus,high,Classic hummus ingredient pattern,draft
+combo_0028,ing_tomatoes|ing_basil|ing_olive_oil|ing_garlic,Tomatoes|Basil|Olive Oil|Garlic,culinary_base,tomato sauces,high,Classic Mediterranean tomato flavor base,draft
+combo_0029,ing_rice|ing_vinegar|ing_sugar|ing_salt,Rice|Vinegar|Sugar|Salt,culinary_base,sushi rice,medium,Seasoned rice pattern,draft
+combo_0030,ing_cocoa_powder|ing_sugar|ing_milk|ing_vanilla,Cocoa Powder|Sugar|Milk|Vanilla,beverage_base,hot chocolate,high,Classic cocoa drink pattern,draft
