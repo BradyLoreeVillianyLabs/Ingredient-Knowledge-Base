@@ -18,6 +18,7 @@ COMMANDS = [
     [sys.executable, "scripts/export_json_pack.py"],
     [sys.executable, "scripts/build_evidence_packs.py"],
     [sys.executable, "scripts/build_dataset_report.py"],
+    [sys.executable, "scripts/audit_missing_data.py"],
 ]
 
 
