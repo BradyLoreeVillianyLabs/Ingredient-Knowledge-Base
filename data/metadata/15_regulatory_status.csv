@@ -1,0 +1,31 @@
+regulatory_id,ingredient_id,canonical_name,jurisdiction,status,allowed_use_notes,requires_warning,review_status,notes
+reg_0001,ing_aspartame,Aspartame,US,allowed,High-intensity sweetener subject to conditions of use,yes,needs_source,PKU phenylalanine warning context required
+reg_0002,ing_aspartame,Aspartame,Canada,allowed,High-intensity sweetener subject to conditions of use,yes,needs_source,Verify Health Canada wording
+reg_0003,ing_sucralose,Sucralose,US,allowed,High-intensity sweetener subject to conditions of use,no,needs_source,Verify CFR citation before production
+reg_0004,ing_sucralose,Sucralose,Canada,allowed,High-intensity sweetener subject to conditions of use,no,needs_source,Verify permitted foods and limits
+reg_0005,ing_acesulfame_potassium,Acesulfame Potassium,US,allowed,High-intensity sweetener subject to conditions of use,no,needs_source,Verify source
+reg_0006,ing_stevia,Steviol Glycosides,US,allowed,High-purity steviol glycosides permitted; whole leaf status differs,no,needs_source,Important distinction for app
+reg_0007,ing_monk_fruit,Monk Fruit Extract,US,allowed,Generally used as high-intensity sweetener,no,needs_source,Verify GRAS notices/status
+reg_0008,ing_red_40,Red 40,US,allowed,Certified color additive subject to batch certification,no,needs_source,Color certification note
+reg_0009,ing_yellow_5,Yellow 5,US,allowed,Certified color additive subject to batch certification,yes,needs_source,Sensitivity labeling details need verification
+reg_0010,ing_yellow_6,Yellow 6,US,allowed,Certified color additive subject to batch certification,no,needs_source,Verify details
+reg_0011,ing_blue_1,Blue 1,US,allowed,Certified color additive subject to batch certification,no,needs_source,Verify details
+reg_0012,ing_red_3,Red 3,US,restricted_or_changing,Regulatory status has changed and requires current verification,yes,needs_source,Must refresh before production
+reg_0013,ing_titanium_dioxide,Titanium Dioxide,EU,not_allowed_as_food_additive,Food additive E171 no longer authorized in EU,yes,needs_source,Verify current EU status before app release
+reg_0014,ing_titanium_dioxide,Titanium Dioxide,US,allowed_or_limited,Status differs from EU; verify current limits,no,needs_source,Jurisdiction-specific warning
+reg_0015,ing_sodium_benzoate,Sodium Benzoate,US,allowed,Preservative subject to food-specific limits,no,needs_source,Verify exact limits
+reg_0016,ing_potassium_sorbate,Potassium Sorbate,US,allowed,Preservative subject to food-specific limits,no,needs_source,Verify exact limits
+reg_0017,ing_sodium_nitrite,Sodium Nitrite,US,allowed_limited,Curing agent with strict limits and use conditions,yes,needs_source,Needs careful cured meat context
+reg_0018,ing_sulfur_dioxide,Sulfur Dioxide,US,allowed_limited,Sulfite preservative with labeling threshold rules,yes,needs_source,Asthma/sensitivity context
+reg_0019,ing_sodium_metabisulfite,Sodium Metabisulfite,Canada,allowed_limited,Sulfite preservative with labeling rules,yes,needs_source,Verify Canadian allergen/sulfite threshold
+reg_0020,ing_bha,BHA,US,allowed_limited,Antioxidant preservative subject to limits,no,needs_source,Consumer concern needs balanced evidence
+reg_0021,ing_bht,BHT,US,allowed_limited,Antioxidant preservative subject to limits,no,needs_source,Consumer concern needs balanced evidence
+reg_0022,ing_tbhq,TBHQ,US,allowed_limited,Antioxidant preservative subject to limits,no,needs_source,ADI and limit context required
+reg_0023,ing_carrageenan,Carrageenan,US,allowed,Thickener/stabilizer subject to food additive rules,no,needs_source,Separate food-grade carrageenan from degraded poligeenan
+reg_0024,ing_carrageenan,Carrageenan,EU,allowed,Food additive E407 subject to specifications,no,needs_source,Verify conditions
+reg_0025,ing_msg,Monosodium Glutamate,US,allowed,Flavor enhancer generally recognized in food use,no,needs_source,Claims need balanced wording
+reg_0026,ing_allulose,Allulose,US,allowed,Regulatory treatment differs by country,no,needs_source,Labeling and sugar declaration rules need verification
+reg_0027,ing_allulose,Allulose,Canada,uncertain_or_limited,Confirm current status before using in Canadian app logic,no,needs_source,Temporal status can change
+reg_0028,ing_mustard_allergen,Mustard,Canada,priority_allergen,Mustard is a priority allergen in Canada,yes,needs_source,Useful for Canadian user defaults
+reg_0029,ing_sesame_allergen,Sesame,US,major_allergen,Sesame is a major allergen in US labeling,yes,needs_source,Verify FASTER Act wording
+reg_0030,ing_sesame_allergen,Sesame,Canada,priority_allergen,Sesame is a priority allergen in Canada,yes,needs_source,Verify current CFIA wording
