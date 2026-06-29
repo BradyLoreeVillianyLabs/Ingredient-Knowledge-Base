@@ -244,6 +244,7 @@ def load_generated_stats(conn: sqlite3.Connection) -> None:
 
 
 def compile_database(output_path: Path) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     if output_path.exists():
         output_path.unlink()
     conn = sqlite3.connect(output_path)
