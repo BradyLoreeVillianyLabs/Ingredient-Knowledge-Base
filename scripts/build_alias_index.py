@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a normalized ingredient alias index from seeded CSV files.
+"""Build a normalized ingredient alias index from curated ingredient CSV files.
 
 Output:
   data/generated/ingredient_alias_index.csv
@@ -8,6 +8,9 @@ This creates a lookup table for OCR matching and ingredient search. It combines:
 - canonical names
 - common_aliases pipe-delimited values
 - E-number-like aliases present in common_aliases
+
+Metadata tables are intentionally excluded because they may contain ingredient_id
+references without being canonical ingredient records.
 """
 
 from __future__ import annotations
@@ -30,9 +33,13 @@ def normalize(value: str) -> str:
     return value.strip()
 
 
+def is_curated_ingredient_file(path: Path) -> bool:
+    return "metadata" not in path.parts and "generated" not in path.parts and "raw" not in path.parts
+
+
 def iter_ingredient_rows():
     for path in sorted(DATA_DIR.rglob("*.csv")):
-        if "generated" in path.parts:
+        if not is_curated_ingredient_file(path):
             continue
         with path.open(newline="", encoding="utf-8") as f:
             reader = csv.DictReader(f)
