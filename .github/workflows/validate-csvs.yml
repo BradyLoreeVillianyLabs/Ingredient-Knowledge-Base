@@ -31,8 +31,21 @@ jobs:
       - name: Run quality gates
         run: python scripts/quality_gate.py
 
+      - name: Export JSON package
+        run: python scripts/export_json_pack.py
+
+      - name: Build evidence packs
+        run: python scripts/build_evidence_packs.py
+
+      - name: Build dataset report
+        run: python scripts/build_dataset_report.py
+
       - name: Compile SQLite package
         run: python scripts/compile_sqlite.py --output /tmp/ingredient_knowledge_base.sqlite
 
-      - name: Check SQLite package exists
-        run: test -s /tmp/ingredient_knowledge_base.sqlite
+      - name: Check generated artifacts
+        run: |
+          test -s /tmp/ingredient_knowledge_base.sqlite
+          test -s data/generated/json/ingredients.json
+          test -s data/generated/evidence_packs_index.json
+          test -s docs/DATASET_REPORT.md
