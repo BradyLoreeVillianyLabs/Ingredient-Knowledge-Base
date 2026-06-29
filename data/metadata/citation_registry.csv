@@ -1,0 +1,10 @@
+citation_id,source_id,title,url,applies_to,claim_scope,review_status,notes
+cite_0001,src_0001,Open Food Facts data exports,https://world.openfoodfacts.org/data,ingredients|products|barcodes|allergens|additives,Dataset source for product ingredient mining,needs_source,Confirm exact license attribution in app
+cite_0002,src_0002,Open Food Facts API documentation,https://openfoodfacts.github.io/openfoodfacts-server/api/,barcode_lookup|product_lookup,Runtime API fallback documentation,needs_source,Use official API docs
+cite_0003,src_0003,USDA FoodData Central,https://fdc.nal.usda.gov/,nutrition_reference,Nutrition and food composition reference,needs_source,Use for nutrient facts not product labels
+cite_0004,src_0004,FDA Food Additive Status List,https://www.fda.gov/food/food-additives-petitions/food-additive-status-list,regulatory_status_us,US food additive status,needs_source,Attach to US additive rows after verification
+cite_0005,src_0005,FDA Color Additives,https://www.fda.gov/industry/color-additives,color_additives_us,US color additive rules and certification context,needs_source,Attach to synthetic color rows
+cite_0006,src_0006,Health Canada Food Additives,https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/food-additives.html,regulatory_status_ca,Canadian food additive rules,needs_source,Attach to Canada status rows
+cite_0007,src_0007,CFIA Food allergens gluten and added sulphites,https://inspection.canada.ca/en/food-labels/labelling/consumers/food-allergens-gluten-added-sulphites,allergens_ca,Canadian priority allergens and sulfites,needs_source,Useful for Canadian defaults
+cite_0008,src_0008,EFSA Food additives topic page,https://www.efsa.europa.eu/en/topics/topic/food-additives,regulatory_status_eu,EU additive risk assessment context,needs_source,Use as starting source not row-level legal database
+cite_0009,src_0010,PubChem PUG REST documentation,https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest,compound_identifiers,Compound metadata and synonyms,needs_source,Use for compound enrichment only
