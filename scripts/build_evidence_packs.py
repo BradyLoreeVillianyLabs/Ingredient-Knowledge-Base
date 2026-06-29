@@ -55,6 +55,7 @@ def main() -> int:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     ingredients = collect_ingredients()
     aliases = group_by_ingredient(DATA_DIR / "generated" / "ingredient_alias_index.csv")
+    rich_profiles = group_by_ingredient(DATA_DIR / "generated" / "rich_ingredient_profiles.csv")
     facts = group_by_ingredient(DATA_DIR / "metadata" / "16_ingredient_facts.csv")
     regulatory = group_by_ingredient(DATA_DIR / "metadata" / "15_regulatory_status.csv")
     history = group_by_ingredient(DATA_DIR / "metadata" / "17_historical_use.csv")
@@ -74,6 +75,7 @@ def main() -> int:
             + allergen_terms.get(ingredient_id, [])
             + color_terms.get(ingredient_id, [])
             + sweetener_terms.get(ingredient_id, [])
+            + rich_profiles.get(ingredient_id, [])
         )
         pack = {
             "ingredient_id": ingredient_id,
@@ -88,6 +90,7 @@ def main() -> int:
             "review_status": ingredient.get("review_status", ""),
             "source_file": ingredient.get("source_file", ""),
             "aliases": aliases.get(ingredient_id, []),
+            "rich_profiles": rich_profiles.get(ingredient_id, []),
             "facts": facts.get(ingredient_id, []),
             "regulatory_status": regulatory.get(ingredient_id, []),
             "history": history.get(ingredient_id, []),
