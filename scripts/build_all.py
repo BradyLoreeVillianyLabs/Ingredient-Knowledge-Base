@@ -33,12 +33,19 @@ def main() -> int:
         default=str(DIST_DIR / "ingredient_knowledge_base.sqlite"),
         help="Where to write the compiled SQLite database.",
     )
+    parser.add_argument(
+        "--skip-release-zips",
+        action="store_true",
+        help="Skip local release ZIP creation.",
+    )
     args = parser.parse_args()
 
     DIST_DIR.mkdir(exist_ok=True)
     for command in COMMANDS:
         run(command)
     run([sys.executable, "scripts/compile_sqlite.py", "--output", args.sqlite_output])
+    if not args.skip_release_zips:
+        run([sys.executable, "scripts/package_release.py"])
     print("Build complete.")
     return 0
 
