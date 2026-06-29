@@ -21,3 +21,7 @@ list_id,path,title,status,row_count_target,notes
 20,data/metadata/20_dashboard_metrics.csv,Dashboard Metrics,seeded,100,Definitions for information-dense app dashboard cards
 21,data/metadata/21_report_sections.csv,Report Sections,seeded,50,Expandable report sections and app copy templates
 22,data/metadata/22_ui_copy.csv,UI Copy,seeded,200,Reusable scan report dashboard and review copy
+23,data/metadata/23_scan_badges.csv,Scan Badges,seeded,100,Visual badges for scan and report UI
+24,data/metadata/24_uncertainty_flags.csv,Uncertainty Flags,seeded,100,Safe explanation of confidence source and review caveats
+25,data/metadata/25_label_parser_rules.csv,Label Parser Rules,seeded,100,Rules for cleaning splitting and preserving ingredient label structure
+26,data/metadata/26_ocr_error_patterns.csv,OCR Error Patterns,seeded,200,Character confusion and correction patterns for OCR normalization
