@@ -32,3 +32,4 @@ list_id,path,title,status,row_count_target,notes
 31,data/metadata/31_allergen_label_terms.csv,Allergen Label Terms,seeded,500,Source-backed allergen aliases and derived label terms
 32,data/metadata/32_color_additive_label_terms.csv,Color Additive Label Terms,seeded,500,Source-backed FDA color additive label terms
 33,data/metadata/33_sweetener_label_terms.csv,Sweetener Label Terms,seeded,500,Source-backed FDA sweetener label terms
+34,data/generated/rich_ingredient_profiles.csv,Rich Ingredient Profiles,generated,500,Generated app enrichment profiles with health-conscious notes stories fun facts odd uses and quips
