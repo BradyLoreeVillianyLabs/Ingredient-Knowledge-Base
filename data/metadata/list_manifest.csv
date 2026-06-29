@@ -11,9 +11,9 @@ list_id,path,title,status,row_count_target,notes
 10,data/nutrition/10_amino_acids.csv,Amino Acids,seeded,60,Include protein-building and specialty amino acids
 11,data/additives/11_flavor_enhancers.csv,Flavor Enhancers,seeded,150,Include glutamates nucleotides yeast extracts
 12,data/culinary/12_spices_herbs.csv,Spices and Herbs,seeded,300,Common culinary and label terms
-13,data/compounds/13_food_compounds.csv,Food Compounds,planned,1000,Compound layer for FooDB-style enrichment
-14,data/metadata/14_ocr_aliases.csv,OCR Aliases,planned,5000,Misspellings abbreviations and scan correction terms
-15,data/metadata/15_regulatory_status.csv,Regulatory Status,planned,1000,FDA EFSA Health Canada status fields
-16,data/metadata/16_ingredient_facts.csv,Ingredient Facts,planned,5000,Short app-friendly facts with evidence level
-17,data/metadata/17_historical_use.csv,Historical Use,planned,1000,Consumption history estimates with confidence
-18,data/metadata/18_common_combinations.csv,Common Combinations,planned,10000,Generated from Open Food Facts co-occurrence mining
+13,data/compounds/13_food_compounds.csv,Food Compounds,seeded,1000,Compound layer for FooDB-style enrichment
+14,data/metadata/14_ocr_aliases.csv,OCR Aliases,seeded,5000,Misspellings abbreviations and scan correction terms
+15,data/metadata/15_regulatory_status.csv,Regulatory Status,seeded,1000,FDA EFSA Health Canada status fields
+16,data/metadata/16_ingredient_facts.csv,Ingredient Facts,seeded,5000,Short app-friendly facts with evidence level
+17,data/metadata/17_historical_use.csv,Historical Use,seeded,1000,Consumption history estimates with confidence
+18,data/metadata/18_common_combinations.csv,Common Combinations,seeded,10000,Generated from Open Food Facts co-occurrence mining
