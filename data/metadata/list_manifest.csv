@@ -18,16 +18,17 @@ list_id,path,title,status,row_count_target,notes
 17,data/metadata/17_historical_use.csv,Historical Use,seeded,1000,Consumption history estimates with confidence
 18,data/metadata/18_common_combinations.csv,Common Combinations,seeded,10000,Generated from Open Food Facts co-occurrence mining
 19,data/metadata/19_food_categories.csv,Food Categories,seeded,200,App category filters and dashboard contexts
-20,data/metadata/20_dashboard_metrics.csv,Dashboard Metrics,seeded,100,Definitions for information-dense app dashboard cards
+20,data/metadata/20_dashboard_metrics.csv,Dashboard Metrics,seeded,100,Definitions for dashboard cards
 21,data/metadata/21_report_sections.csv,Report Sections,seeded,50,Expandable report sections and app copy templates
 22,data/metadata/22_ui_copy.csv,UI Copy,seeded,200,Reusable scan report dashboard and review copy
 23,data/metadata/23_scan_badges.csv,Scan Badges,seeded,100,Visual badges for scan and report UI
 24,data/metadata/24_uncertainty_flags.csv,Uncertainty Flags,seeded,100,Safe explanation of confidence source and review caveats
-25,data/metadata/25_label_parser_rules.csv,Label Parser Rules,seeded,100,Rules for cleaning splitting and preserving ingredient label structure
-26,data/metadata/26_ocr_error_patterns.csv,OCR Error Patterns,seeded,200,Character confusion and correction patterns for OCR normalization
+25,data/metadata/25_label_parser_rules.csv,Label Parser Rules,seeded,100,Rules for cleaning splitting and preserving label structure
+26,data/metadata/26_ocr_error_patterns.csv,OCR Error Patterns,seeded,200,Character confusion and correction patterns
 27,data/metadata/27_verified_public_sources.csv,Verified Public Sources,seeded,100,Public lookupable official sources checked before citation use
 28,data/metadata/28_ingredient_quips.csv,Ingredient Quips,seeded,500,Optional fun-mode jokes and quips kept separate from evidence fields
 29,data/metadata/29_source_backed_labeling_rules.csv,Source-Backed Labeling Rules,seeded,200,Official citation-backed display and parser rules for labels
-30,data/metadata/30_placeholder_replacement_tracker.csv,Placeholder Replacement Tracker,seeded,100,Tracks draft placeholder fields and the exact source-backed replacement path
-31,data/metadata/31_allergen_label_terms.csv,Allergen Label Terms,seeded,500,Source-backed allergen aliases and derived label terms for scanner matching
-32,data/metadata/32_color_additive_label_terms.csv,Color Additive Label Terms,seeded,500,Source-backed FDA color additive label terms for scanner matching
+30,data/metadata/30_placeholder_replacement_tracker.csv,Placeholder Replacement Tracker,seeded,100,Tracks draft fields and the source-backed replacement path
+31,data/metadata/31_allergen_label_terms.csv,Allergen Label Terms,seeded,500,Source-backed allergen aliases and derived label terms
+32,data/metadata/32_color_additive_label_terms.csv,Color Additive Label Terms,seeded,500,Source-backed FDA color additive label terms
+33,data/metadata/33_sweetener_label_terms.csv,Sweetener Label Terms,seeded,500,Source-backed FDA sweetener label terms
