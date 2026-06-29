@@ -32,5 +32,15 @@ jobs:
           test -s dist/ingredient-knowledge-base-json.zip
           test -s data/generated/json/ingredients.json
           test -s data/generated/evidence_packs_index.json
+          test -s data/generated/rich_ingredient_profiles.csv
           test -s docs/DATASET_REPORT.md
           test -s docs/MISSING_DATA_REPORT.md
+
+      - name: Check rich profile row count
+        run: python - <<'PY'
+          import csv
+          with open('data/generated/rich_ingredient_profiles.csv', newline='', encoding='utf-8') as f:
+              rows = list(csv.DictReader(f))
+          assert len(rows) == 500, f'expected 500 rich profiles, found {len(rows)}'
+          print('rich profile count ok')
+          PY
