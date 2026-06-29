@@ -2,7 +2,7 @@
 
 ## Current package
 
-The first package establishes the file structure, core schema, validation script, CI workflow, and seven seeded lists:
+The package now establishes the file structure, core schema, validation script, CI workflow, and twelve seeded lists:
 
 1. Core ingredients
 2. Preservatives
@@ -11,6 +11,11 @@ The first package establishes the file structure, core schema, validation script
 5. Food colors
 6. Common allergens
 7. Oils and fats
+8. Vitamins
+9. Minerals
+10. Amino acids
+11. Flavor enhancers
+12. Spices and herbs
 
 ## Iteration loop
 
@@ -25,11 +30,6 @@ For each new list:
 
 ## Next lists to build
 
-- Vitamins
-- Minerals
-- Amino acids
-- Flavor enhancers
-- Spices and herbs
 - Food compounds
 - OCR aliases
 - Regulatory status
