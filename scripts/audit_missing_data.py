@@ -14,6 +14,7 @@ import csv
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
+from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
@@ -22,6 +23,14 @@ PLACEHOLDER_RE = re.compile(
     r"\b(needs_source|needs_review|needs_specific|unknown|verify|confirm|placeholder|not_started|draft_source_needed)\b",
     re.IGNORECASE,
 )
+
+
+def stringify(value: Any) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, list):
+        return " ".join(str(item) for item in value if item is not None)
+    return str(value)
 
 
 def iter_csv_rows():
@@ -42,24 +51,25 @@ def main() -> int:
 
     for path, line_no, row in iter_csv_rows():
         rel = str(path.relative_to(ROOT))
-        review_status = (row.get("review_status") or "").strip()
+        review_status = stringify(row.get("review_status")).strip()
         if review_status:
             status_counts[review_status] += 1
         if review_status in {"needs_source", "needs_review"}:
             findings.append((rel, line_no, "review_status", review_status))
             file_counts[rel] += 1
 
-        for key, value in row.items():
-            value = value or ""
+        for key, raw_value in row.items():
+            value = stringify(raw_value)
+            column = stringify(key) or "extra_columns"
             if PLACEHOLDER_RE.search(value):
-                findings.append((rel, line_no, key, value[:160]))
+                findings.append((rel, line_no, column, value[:160]))
                 file_counts[rel] += 1
 
-        if "ingredient_id" in row and not (row.get("ingredient_id") or "").strip():
+        if "ingredient_id" in row and not stringify(row.get("ingredient_id")).strip():
             missing_required[rel].append(f"line {line_no}: ingredient_id")
-        if "canonical_name" in row and not (row.get("canonical_name") or "").strip():
+        if "canonical_name" in row and not stringify(row.get("canonical_name")).strip():
             missing_required[rel].append(f"line {line_no}: canonical_name")
-        if review_status == "reviewed" and "citation_id" in row and not (row.get("citation_id") or "").strip():
+        if review_status == "reviewed" and "citation_id" in row and not stringify(row.get("citation_id")).strip():
             missing_required[rel].append(f"line {line_no}: reviewed row missing citation_id")
 
     lines = [
@@ -96,6 +106,7 @@ def main() -> int:
         safe_value = value.replace("|", "/")
         lines.append(f"| {rel} | {line_no} | {key} | {safe_value} |")
 
+    OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"Wrote {OUT_PATH}")
     return 0
