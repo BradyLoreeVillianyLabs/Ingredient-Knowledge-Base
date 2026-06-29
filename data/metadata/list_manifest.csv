@@ -6,11 +6,11 @@ list_id,path,title,status,row_count_target,notes
 05,data/additives/05_colors.csv,Food Colors,seeded,150,Track country-specific regulatory status
 06,data/safety/06_common_allergens.csv,Common Allergens,seeded,100,Jurisdiction-specific allergen rules needed
 07,data/culinary/07_oils_and_fats.csv,Oils and Fats,seeded,200,Add fatty acid profile fields later
-08,data/nutrition/08_vitamins.csv,Vitamins,planned,50,Add vitamin aliases and fortification terms
-09,data/nutrition/09_minerals.csv,Minerals,planned,75,Add salts and mineral forms
-10,data/nutrition/10_amino_acids.csv,Amino Acids,planned,60,Include protein-building and specialty amino acids
-11,data/additives/11_flavor_enhancers.csv,Flavor Enhancers,planned,150,Include glutamates nucleotides yeast extracts
-12,data/culinary/12_spices_herbs.csv,Spices and Herbs,planned,300,Common culinary and label terms
+08,data/nutrition/08_vitamins.csv,Vitamins,seeded,50,Add vitamin aliases and fortification terms
+09,data/nutrition/09_minerals.csv,Minerals,seeded,75,Add salts and mineral forms
+10,data/nutrition/10_amino_acids.csv,Amino Acids,seeded,60,Include protein-building and specialty amino acids
+11,data/additives/11_flavor_enhancers.csv,Flavor Enhancers,seeded,150,Include glutamates nucleotides yeast extracts
+12,data/culinary/12_spices_herbs.csv,Spices and Herbs,seeded,300,Common culinary and label terms
 13,data/compounds/13_food_compounds.csv,Food Compounds,planned,1000,Compound layer for FooDB-style enrichment
 14,data/metadata/14_ocr_aliases.csv,OCR Aliases,planned,5000,Misspellings abbreviations and scan correction terms
 15,data/metadata/15_regulatory_status.csv,Regulatory Status,planned,1000,FDA EFSA Health Canada status fields
