@@ -1,0 +1,21 @@
+rule_id,rule_type,condition,priority,display_behavior,reason,review_status
+pri_allergen_high,badge,allergen_detected,100,show_first,Allergen-related information is high-priority for users who filter allergens.,reviewed
+pri_pet_xylitol,badge,ingredient_id=ing_xylitol,98,show_first,Xylitol has an important pet-safety warning for dogs.,reviewed
+pri_low_confidence,scan,match_confidence_below_0_85,95,show_correction_prompt,Users should see and correct uncertain OCR matches.,reviewed
+pri_unmatched_terms,scan,unmatched_terms_present,90,show_unmatched_terms,Unmatched terms can hide important ingredients and improve the database.,reviewed
+pri_gluten,badge,gluten_related_detected,88,show_filter_badge,Gluten-related ingredients are common dietary filters.,reviewed
+pri_sulfites,badge,sulfite_detected,86,show_sensitivity_badge,Sulfites matter for sensitive individuals and label rules.,reviewed
+pri_synthetic_color,badge,synthetic_color_detected,70,show_color_badge,Some users specifically want to notice synthetic colors.,reviewed
+pri_high_intensity_sweetener,badge,high_intensity_sweetener_detected,68,show_sweetener_badge,High-intensity sweeteners are common preference filters.,reviewed
+pri_sugar_alcohol,badge,sugar_alcohol_detected,66,show_polyol_badge,Sugar alcohols can affect digestion in larger amounts.,reviewed
+pri_preservative,function,preservative_detected,50,show_function_note,Preservatives explain shelf-life and quality roles.,reviewed
+pri_emulsifier,function,emulsifier_detected,45,show_function_note,Emulsifiers explain texture and mixing roles.,reviewed
+pri_thickener,function,thickener_detected,44,show_function_note,Thickeners explain texture and mouthfeel roles.,reviewed
+pri_acid,function,acidulant_detected,42,show_function_note,Acids explain tartness and pH balance.,reviewed
+pri_leavener,function,leavening_agent_detected,40,show_function_note,Leaveners explain baked-food texture and rise.,reviewed
+pri_vitamin,function,vitamin_detected,38,show_nutrient_note,Added vitamins may indicate fortification.,reviewed
+pri_mineral,function,mineral_detected,37,show_nutrient_note,Added minerals may indicate fortification or processing function.,reviewed
+pri_common_ingredient,function,core_ingredient_detected,20,show_short_note,Common ingredients can be collapsed by default to save space.,reviewed
+pri_reviewed,quality,review_status=reviewed,10,allow_normal_display,Reviewed rows can be shown with standard app copy.,reviewed
+pri_draft,quality,review_status=draft,5,show_neutral_only,Draft rows should avoid strong claims.,reviewed
+pri_source_gap,quality,source_missing,1,hide_strong_claims,Rows without source backing should not show safety or regulatory claims.,reviewed
