@@ -2,7 +2,7 @@
 
 ## Current package
 
-The package now establishes the file structure, core schema, validation script, CI workflow, and twelve seeded lists:
+The package now establishes the file structure, core schema, validation script, CI workflow, and eighteen seeded lists:
 
 1. Core ingredients
 2. Preservatives
@@ -16,6 +16,12 @@ The package now establishes the file structure, core schema, validation script, 
 10. Amino acids
 11. Flavor enhancers
 12. Spices and herbs
+13. Food compounds
+14. OCR aliases
+15. Regulatory status
+16. Ingredient facts
+17. Historical use
+18. Common combinations
 
 ## Iteration loop
 
@@ -28,14 +34,16 @@ For each new list:
 5. Commit the list.
 6. Update `data/metadata/list_manifest.csv` from `planned` to `seeded` or `reviewed`.
 
-## Next lists to build
+## Next phase
 
-- Food compounds
-- OCR aliases
-- Regulatory status
-- Ingredient facts
-- Historical use
-- Common combinations mined from Open Food Facts
+The initial schema is now seeded. The next phase should expand row counts and add source-backed citations:
+
+- Expand core ingredients toward 500 rows.
+- Expand food compounds toward 1,000 rows.
+- Expand OCR aliases toward 5,000 rows using OCR error mining.
+- Expand ingredient facts toward 5,000 app-ready facts.
+- Add source URLs and citation IDs for regulatory and safety-sensitive rows.
+- Mine Open Food Facts for frequency and co-occurrence statistics.
 
 ## App integration recommendation
 
