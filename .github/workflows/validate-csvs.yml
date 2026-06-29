@@ -37,10 +37,4 @@ jobs:
           test -s docs/MISSING_DATA_REPORT.md
 
       - name: Check rich profile row count
-        run: python - <<'PY'
-          import csv
-          with open('data/generated/rich_ingredient_profiles.csv', newline='', encoding='utf-8') as f:
-              rows = list(csv.DictReader(f))
-          assert len(rows) == 500, f'expected 500 rich profiles, found {len(rows)}'
-          print('rich profile count ok')
-          PY
+        run: python scripts/check_rich_profile_count.py
