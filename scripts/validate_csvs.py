@@ -3,9 +3,11 @@
 
 Checks:
 - every CSV can be parsed
-- data list CSVs contain the required schema columns
-- ingredient_id values are lowercase slug-like identifiers
-- review_status uses approved values
+- curated ingredient-list CSVs contain the required schema columns
+- curated ingredient_id values are lowercase slug-like identifiers
+- review_status values use approved values where present
+
+Metadata CSVs intentionally use different schemas and are validated more lightly.
 """
 
 from __future__ import annotations
@@ -30,8 +32,18 @@ REQUIRED_COLUMNS = [
     "risk_note",
     "review_status",
 ]
-VALID_REVIEW_STATUS = {"draft", "needs_source", "reviewed"}
+VALID_REVIEW_STATUS = {"draft", "needs_source", "reviewed", "generated", "mined", "needs_review"}
 SLUG_RE = re.compile(r"^[a-z0-9_]+$")
+
+
+def is_metadata_or_generated(path: Path) -> bool:
+    return "metadata" in path.parts or "generated" in path.parts or "raw" in path.parts
+
+
+def is_curated_ingredient_list(path: Path, fieldnames: list[str]) -> bool:
+    if is_metadata_or_generated(path):
+        return False
+    return "ingredient_id" in fieldnames
 
 
 def validate_file(path: Path) -> list[str]:
@@ -41,16 +53,22 @@ def validate_file(path: Path) -> list[str]:
         if not reader.fieldnames:
             return [f"{path}: missing header"]
 
-        # Metadata files may intentionally have different schemas.
-        is_ingredient_list = "ingredient_id" in reader.fieldnames
+        is_ingredient_list = is_curated_ingredient_list(path, reader.fieldnames)
         if is_ingredient_list:
             missing = [c for c in REQUIRED_COLUMNS if c not in reader.fieldnames]
             if missing:
                 errors.append(f"{path}: missing columns {missing}")
 
         for line_number, row in enumerate(reader, start=2):
+            review_status = (row.get("review_status") or "").strip()
+            if review_status and review_status not in VALID_REVIEW_STATUS:
+                errors.append(
+                    f"{path}:{line_number}: invalid review_status {review_status!r}"
+                )
+
             if not is_ingredient_list:
                 continue
+
             ingredient_id = (row.get("ingredient_id") or "").strip()
             if not ingredient_id:
                 errors.append(f"{path}:{line_number}: missing ingredient_id")
@@ -60,17 +78,14 @@ def validate_file(path: Path) -> list[str]:
             name = (row.get("canonical_name") or "").strip()
             if not name:
                 errors.append(f"{path}:{line_number}: missing canonical_name")
-
-            review_status = (row.get("review_status") or "").strip()
-            if review_status not in VALID_REVIEW_STATUS:
-                errors.append(
-                    f"{path}:{line_number}: invalid review_status {review_status!r}"
-                )
     return errors
 
 
 def main() -> int:
-    csv_files = sorted(DATA_DIR.rglob("*.csv"))
+    csv_files = sorted(
+        path for path in DATA_DIR.rglob("*.csv")
+        if "raw" not in path.parts
+    )
     if not csv_files:
         print("No CSV files found under data/.")
         return 1
