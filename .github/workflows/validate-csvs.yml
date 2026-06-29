@@ -33,3 +33,4 @@ jobs:
           test -s data/generated/json/ingredients.json
           test -s data/generated/evidence_packs_index.json
           test -s docs/DATASET_REPORT.md
+          test -s docs/MISSING_DATA_REPORT.md
