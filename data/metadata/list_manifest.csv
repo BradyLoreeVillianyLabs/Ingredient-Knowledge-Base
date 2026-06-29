@@ -17,3 +17,7 @@ list_id,path,title,status,row_count_target,notes
 16,data/metadata/16_ingredient_facts.csv,Ingredient Facts,seeded,5000,Short app-friendly facts with evidence level
 17,data/metadata/17_historical_use.csv,Historical Use,seeded,1000,Consumption history estimates with confidence
 18,data/metadata/18_common_combinations.csv,Common Combinations,seeded,10000,Generated from Open Food Facts co-occurrence mining
+19,data/metadata/19_food_categories.csv,Food Categories,seeded,200,App category filters and dashboard contexts
+20,data/metadata/20_dashboard_metrics.csv,Dashboard Metrics,seeded,100,Definitions for information-dense app dashboard cards
+21,data/metadata/21_report_sections.csv,Report Sections,seeded,50,Expandable report sections and app copy templates
+22,data/metadata/22_ui_copy.csv,UI Copy,seeded,200,Reusable scan report dashboard and review copy
