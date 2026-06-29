@@ -1,0 +1,24 @@
+message_id,trigger_type,trigger_value,severity,title,body,display_action,review_status
+msg_allergen_milk,allergen,Milk,high,Milk allergen detected,This ingredient is milk-derived or commonly associated with milk proteins.,Show allergen badge and ingredient source.,reviewed
+msg_allergen_egg,allergen,Egg,high,Egg allergen detected,This ingredient is egg-derived or commonly associated with egg proteins.,Show allergen badge and ingredient source.,reviewed
+msg_allergen_soy,allergen,Soy,high,Soy allergen detected,This ingredient is soy-derived or commonly associated with soy products.,Show allergen badge and ingredient source.,reviewed
+msg_allergen_wheat,allergen,Wheat,high,Wheat detected,This ingredient contains wheat or is commonly derived from wheat.,Show wheat and gluten context separately.,reviewed
+msg_allergen_tree_nut,allergen,Tree Nuts,high,Tree nut ingredient detected,This ingredient is a tree nut or tree-nut-derived ingredient.,Show specific nut name where possible.,reviewed
+msg_allergen_peanut,allergen,Peanut,high,Peanut ingredient detected,This ingredient is peanut-derived or commonly associated with peanuts.,Show allergen badge clearly.,reviewed
+msg_allergen_sesame,allergen,Sesame,high,Sesame ingredient detected,This ingredient is sesame-derived or commonly associated with sesame.,Show allergen badge clearly.,reviewed
+msg_sulfites,sensitivity,Sulfites,medium,Sulfite preservative detected,Sulfites are preservatives that can matter for sensitive individuals.,Show sensitivity badge and preserve exact label text.,reviewed
+msg_gluten,filter,Gluten,medium,Gluten-related ingredient detected,This ingredient is wheat barley rye or another gluten-related ingredient.,Show gluten-free caution when relevant.,reviewed
+msg_xylitol_pet,pet_safety,Xylitol,high,Pet safety warning,Xylitol is dangerous to dogs even though it is used in some human foods.,Show pet-safety warning.,reviewed
+msg_high_intensity_sweetener,category,high-intensity sweetener,low,High-intensity sweetener detected,This sweetener provides strong sweetness with little bulk and is often blended with other ingredients.,Show sweetener type badge.,reviewed
+msg_sugar_alcohol,category,sugar alcohol,medium,Sugar alcohol detected,Sugar alcohols can add sweetness and bulk but may affect digestion for some people in larger amounts.,Show polyol badge and digestion note.,reviewed
+msg_synthetic_color,category,synthetic color,medium,Synthetic color detected,This color provides strong predictable coloring but rules and label wording vary by jurisdiction.,Show color badge and jurisdiction note.,reviewed
+msg_natural_color,category,natural color,low,Natural color source detected,This color comes from a plant mineral or other natural source but stability and suitability vary.,Show color source badge.,reviewed
+msg_preservative,category,preservative,low,Preservative detected,This ingredient helps slow spoilage or quality loss in the food.,Show preservation function badge.,reviewed
+msg_emulsifier,category,emulsifier,low,Emulsifier detected,This ingredient helps oil water or air stay evenly distributed for texture.,Show texture/function badge.,reviewed
+msg_thickener,category,thickener,low,Thickener detected,This ingredient helps control thickness gel structure or suspension.,Show texture/function badge.,reviewed
+msg_acidulant,category,acidulant,low,Acidulant detected,This ingredient adds tartness or helps balance acidity.,Show flavor/function badge.,reviewed
+msg_leavener,category,leavening_agent,low,Leavening ingredient detected,This ingredient helps baked foods rise or develop texture.,Show baking-function badge.,reviewed
+msg_fortificant,category,vitamin,low,Added vitamin detected,This ingredient may be included for fortification or nutrient standardization.,Show nutrient badge without medical claims.,reviewed
+msg_mineral,category,mineral,low,Added mineral detected,This ingredient may provide minerals or serve a processing role.,Show mineral badge and amount-needed note.,reviewed
+msg_unmatched,scan_state,unmatched,info,Unmatched term,The scanner found a term that is not yet in the knowledge base.,Offer correction and save for review.,reviewed
+msg_low_confidence,scan_state,low_confidence,info,Low-confidence match,The scanner found a possible match but the text may be misread.,Show original OCR text beside the match.,reviewed
