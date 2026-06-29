@@ -1,0 +1,29 @@
+color_term_id,ingredient_id,canonical_color,detected_term,color_family,certification_type,jurisdiction,citation_id,review_status,app_action,notes
+color_0001,ing_blue_1,Blue 1,FD&C Blue No. 1,blue,certified,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0002,ing_blue_1,Blue 1,Blue 1,blue,certified,US,cite_0016,reviewed,flag_color_additive,Common shortened label term
+color_0003,ing_blue_1,Blue 1,Brilliant Blue FCF,blue,certified,US,cite_0016,reviewed,flag_color_additive,Common name
+color_0004,ing_blue_2,Blue 2,FD&C Blue No. 2,blue,certified,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0005,ing_blue_2,Blue 2,Blue 2,blue,certified,US,cite_0016,reviewed,flag_color_additive,Common shortened label term
+color_0006,ing_green_3,Green 3,FD&C Green No. 3,green,certified,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0007,ing_green_3,Green 3,Green 3,green,certified,US,cite_0016,reviewed,flag_color_additive,Common shortened label term
+color_0008,ing_red_3,Red 3,FD&C Red No. 3,red,certified,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0009,ing_red_3,Red 3,Red 3,red,certified,US,cite_0016,reviewed,flag_color_additive,Common shortened label term
+color_0010,ing_red_40,Red 40,FD&C Red No. 40,red,certified,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0011,ing_red_40,Red 40,Red 40,red,certified,US,cite_0016,reviewed,flag_color_additive,Common shortened label term
+color_0012,ing_yellow_5,Yellow 5,FD&C Yellow No. 5,yellow,certified,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0013,ing_yellow_5,Yellow 5,Yellow 5,yellow,certified,US,cite_0016,reviewed,flag_color_additive,Common shortened label term
+color_0014,ing_yellow_5,Yellow 5,Tartrazine,yellow,certified,US,cite_0016,reviewed,flag_color_additive,Common name
+color_0015,ing_yellow_6,Yellow 6,FD&C Yellow No. 6,orange,certified,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0016,ing_yellow_6,Yellow 6,Yellow 6,orange,certified,US,cite_0016,reviewed,flag_color_additive,Common shortened label term
+color_0017,ing_annatto,Annatto,Annatto Extract,orange,exempt_from_certification,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0018,ing_annatto,Annatto,Annatto,orange,exempt_from_certification,US,cite_0016,reviewed,flag_color_additive,Common shortened label term
+color_0019,ing_caramel_color,Caramel Color,Caramel,brown,exempt_from_certification,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0020,ing_caramel_color,Caramel Color,Caramel Color,brown,exempt_from_certification,US,cite_0016,reviewed,flag_color_additive,Common label term
+color_0021,ing_beta_carotene,Beta-Carotene,Beta-Carotene,orange,exempt_from_certification,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0022,ing_carmine,Carmine,Carmine,red,exempt_from_certification,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0023,ing_carmine,Carmine,Cochineal Extract,red,exempt_from_certification,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0024,ing_spirulina_extract,Spirulina Extract,Spirulina Extract,blue_green,exempt_from_certification,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0025,ing_titanium_dioxide,Titanium Dioxide,Titanium Dioxide,white,exempt_from_certification,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0026,ing_turmeric_color,Turmeric Color,Turmeric,yellow,exempt_from_certification,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0027,ing_turmeric_color,Turmeric Color,Turmeric Oleoresin,yellow,exempt_from_certification,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
+color_0028,ing_beet_juice_color,Beet Juice Color,Dehydrated Beets,red,exempt_from_certification,US,cite_0016,reviewed,flag_color_additive,FDA summary lists this color additive for human food
