@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Build outputs
+dist/
+
+# Generated package artifacts
+# These are reproducible from scripts and should generally not be committed.
+data/generated/
+
+# Raw external datasets can be huge.
+data/raw/*.csv
+data/raw/*.csv.gz
+data/raw/*.tsv
+data/raw/*.tsv.gz
+data/raw/*.jsonl
+data/raw/*.jsonl.gz
+data/raw/*.parquet
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
