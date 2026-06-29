@@ -14,6 +14,7 @@ DIST_DIR = ROOT / "dist"
 COMMANDS = [
     [sys.executable, "scripts/validate_csvs.py"],
     [sys.executable, "scripts/build_alias_index.py"],
+    [sys.executable, "scripts/generate_rich_ingredient_profiles.py"],
     [sys.executable, "scripts/quality_gate.py"],
     [sys.executable, "scripts/export_json_pack.py"],
     [sys.executable, "scripts/build_evidence_packs.py"],
