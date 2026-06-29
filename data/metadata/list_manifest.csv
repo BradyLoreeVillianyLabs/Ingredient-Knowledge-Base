@@ -29,3 +29,4 @@ list_id,path,title,status,row_count_target,notes
 28,data/metadata/28_ingredient_quips.csv,Ingredient Quips,seeded,500,Optional fun-mode jokes and quips kept separate from evidence fields
 29,data/metadata/29_source_backed_labeling_rules.csv,Source-Backed Labeling Rules,seeded,200,Official citation-backed display and parser rules for labels
 30,data/metadata/30_placeholder_replacement_tracker.csv,Placeholder Replacement Tracker,seeded,100,Tracks draft placeholder fields and the exact source-backed replacement path
+31,data/metadata/31_allergen_label_terms.csv,Allergen Label Terms,seeded,500,Source-backed allergen aliases and derived label terms for scanner matching
