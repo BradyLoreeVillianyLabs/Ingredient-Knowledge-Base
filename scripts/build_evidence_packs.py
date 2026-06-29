@@ -58,6 +58,10 @@ def main() -> int:
     facts = group_by_ingredient(DATA_DIR / "metadata" / "16_ingredient_facts.csv")
     regulatory = group_by_ingredient(DATA_DIR / "metadata" / "15_regulatory_status.csv")
     history = group_by_ingredient(DATA_DIR / "metadata" / "17_historical_use.csv")
+    quips = group_by_ingredient(DATA_DIR / "metadata" / "28_ingredient_quips.csv")
+
+    label_rules = read_csv(DATA_DIR / "metadata" / "29_source_backed_labeling_rules.csv")
+    citations = {row.get("citation_id", ""): row for row in read_csv(DATA_DIR / "metadata" / "citation_registry.csv")}
 
     index = []
     for ingredient_id, ingredient in sorted(ingredients.items()):
@@ -77,10 +81,22 @@ def main() -> int:
             "facts": facts.get(ingredient_id, []),
             "regulatory_status": regulatory.get(ingredient_id, []),
             "history": history.get(ingredient_id, []),
+            "quips": quips.get(ingredient_id, []),
+            "source_backed_labeling_rules": [
+                row for row in label_rules
+                if row.get("trigger", "").lower().find(ingredient.get("canonical_name", "").lower()) >= 0
+                or row.get("scope", "").lower().find(ingredient.get("category", "").lower()) >= 0
+            ],
+            "citations": {
+                row.get("citation_id", ""): citations.get(row.get("citation_id", ""), {})
+                for row in facts.get(ingredient_id, []) + regulatory.get(ingredient_id, [])
+                if row.get("citation_id")
+            },
             "display_safety": {
                 "can_show_as_verified": ingredient.get("review_status") == "reviewed",
                 "requires_uncertainty_label": ingredient.get("review_status") in {"draft", "needs_source"},
                 "hide_medical_claims": True,
+                "fun_content_separate_from_evidence": True,
             },
         }
         out_path = OUT_DIR / f"{ingredient_id}.json"
