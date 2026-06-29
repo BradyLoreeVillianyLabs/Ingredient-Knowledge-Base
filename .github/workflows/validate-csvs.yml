@@ -27,3 +27,12 @@ jobs:
 
       - name: Check generated alias index exists
         run: test -s data/generated/ingredient_alias_index.csv
+
+      - name: Run quality gates
+        run: python scripts/quality_gate.py
+
+      - name: Compile SQLite package
+        run: python scripts/compile_sqlite.py --output /tmp/ingredient_knowledge_base.sqlite
+
+      - name: Check SQLite package exists
+        run: test -s /tmp/ingredient_knowledge_base.sqlite
