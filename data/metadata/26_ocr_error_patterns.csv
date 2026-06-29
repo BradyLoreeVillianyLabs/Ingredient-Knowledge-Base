@@ -1,0 +1,16 @@
+pattern_id,error_pattern,correct_pattern,pattern_type,confidence,example,review_status
+ocrpat_0001,0,O,character_confusion,0.6,Red 4O -> Red 40,draft
+ocrpat_0002,O,0,character_confusion,0.6,E95O -> E950,draft
+ocrpat_0003,l,1,character_confusion,0.5,Blue l -> Blue 1,draft
+ocrpat_0004,1,l,character_confusion,0.5,lecithin may be read with 1,draft
+ocrpat_0005,rn,m,character_pair_confusion,0.7,gurn -> gum,draft
+ocrpat_0006,m,rn,character_pair_confusion,0.5,corn may be confused in low quality OCR,draft
+ocrpat_0007,cl,d,character_pair_confusion,0.4,less common but possible,draft
+ocrpat_0008,ii,ll,character_pair_confusion,0.4,word-artifact correction,draft
+ocrpat_0009,fi,fl,ligature_confusion,0.6,sunfiower -> sunflower,draft
+ocrpat_0010,fl,fi,ligature_confusion,0.5,OCR font-specific issue,draft
+ocrpat_0011,acid,acld,reverse_lookup,0.7,citric acld -> citric acid,draft
+ocrpat_0012,protein,proteln,reverse_lookup,0.7,whey proteln -> whey protein,draft
+ocrpat_0013,oil,oli,reverse_lookup,0.7,olive oli -> olive oil,draft
+ocrpat_0014,potassium,potasslum,reverse_lookup,0.7,potasslum sorbate -> potassium sorbate,draft
+ocrpat_0015,sodium,sodlum,reverse_lookup,0.7,sodlum chloride -> sodium chloride,draft
