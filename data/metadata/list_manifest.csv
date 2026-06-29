@@ -25,3 +25,5 @@ list_id,path,title,status,row_count_target,notes
 24,data/metadata/24_uncertainty_flags.csv,Uncertainty Flags,seeded,100,Safe explanation of confidence source and review caveats
 25,data/metadata/25_label_parser_rules.csv,Label Parser Rules,seeded,100,Rules for cleaning splitting and preserving ingredient label structure
 26,data/metadata/26_ocr_error_patterns.csv,OCR Error Patterns,seeded,200,Character confusion and correction patterns for OCR normalization
+27,data/metadata/27_verified_public_sources.csv,Verified Public Sources,seeded,100,Public lookupable official sources checked before citation use
+28,data/metadata/28_ingredient_quips.csv,Ingredient Quips,seeded,500,Optional fun-mode jokes and quips kept separate from evidence fields
