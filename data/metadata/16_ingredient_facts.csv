@@ -1,51 +1,69 @@
-fact_id,ingredient_id,canonical_name,fact_type,fact_text,evidence_level,review_status
-fact_0001,ing_water,Water,chemistry,Water is the main solvent in most foods and cooking processes,general,draft
-fact_0002,ing_salt,Salt,history,Salt was one of the earliest and most important food preservation tools,general,draft
-fact_0003,ing_sugar,Sugar,function,Sugar affects sweetness browning moisture and texture, general,draft
-fact_0004,ing_wheat_flour,Wheat Flour,function,Gluten-forming proteins in wheat flour help bread trap gas and rise,general,draft
-fact_0005,ing_yeast,Yeast,biology,Baker's yeast produces carbon dioxide during fermentation,general,draft
-fact_0006,ing_vinegar,Vinegar,fermentation,Vinegar is produced when microbes convert alcohol into acetic acid,general,draft
-fact_0007,ing_honey,Honey,history,Honey has been used by humans since prehistoric times,general,draft
-fact_0008,ing_olive_oil,Olive Oil,history,Olive oil has been central to Mediterranean cooking for thousands of years,general,draft
-fact_0009,ing_corn_starch,Cornstarch,function,Cornstarch thickens sauces because starch granules swell when heated in water,general,draft
-fact_0010,ing_gelatin,Gelatin,function,Gelatin makes heat-reversible gels that melt in the mouth,general,draft
-fact_0011,ing_pectin,Pectin,function,Pectin helps jams and jellies set into a gel,general,draft
-fact_0012,ing_xanthan_gum,Xanthan Gum,production,Xanthan gum is made by microbial fermentation,source_needed,needs_source
-fact_0013,ing_guar_gum,Guar Gum,source,Guar gum comes from guar beans,source_needed,needs_source
-fact_0014,ing_carrageenan,Carrageenan,source,Carrageenan comes from red seaweed,source_needed,needs_source
-fact_0015,ing_soy_lecithin,Soy Lecithin,function,Lecithin helps oil and water stay mixed in foods,general,draft
-fact_0016,ing_msg,Monosodium Glutamate,function,MSG adds umami flavor by supplying glutamate,general,draft
-fact_0017,ing_disodium_inosinate,Disodium Inosinate,function,Disodium inosinate is often paired with glutamates to boost savory taste,source_needed,needs_source
-fact_0018,ing_caffeine,Caffeine,chemistry,Caffeine is a bitter alkaloid found naturally in coffee tea and cacao,source_needed,needs_source
-fact_0019,ing_theobromine,Theobromine,chemistry,Theobromine is one of cocoa's characteristic methylxanthines,source_needed,needs_source
-fact_0020,ing_capsaicin,Capsaicin,chemistry,Capsaicin creates a heat sensation by activating heat-sensitive receptors,general,draft
-fact_0021,ing_piperine,Piperine,chemistry,Piperine is a major pungent compound in black pepper,general,draft
-fact_0022,ing_curcumin,Curcumin,color,Curcumin gives turmeric much of its yellow color,general,draft
-fact_0023,ing_anthocyanins,Anthocyanins,color,Anthocyanins can shift color depending on acidity,general,draft
-fact_0024,ing_lycopene,Lycopene,color,Lycopene is a red carotenoid found in tomatoes and watermelon,general,draft
-fact_0025,ing_beta_carotene,Beta-Carotene,color,Beta-carotene gives orange color to carrots and some food colorants,general,draft
-fact_0026,ing_sodium_benzoate,Sodium Benzoate,function,Sodium benzoate is mainly used to inhibit microbes in acidic foods,source_needed,needs_source
-fact_0027,ing_potassium_sorbate,Potassium Sorbate,function,Potassium sorbate is commonly used to control mold and yeast,source_needed,needs_source
-fact_0028,ing_sodium_nitrite,Sodium Nitrite,function,Sodium nitrite helps cured meats keep color and resist certain microbes,source_needed,needs_source
-fact_0029,ing_sulfur_dioxide,Sulfur Dioxide,function,Sulfur dioxide helps prevent browning and spoilage in some foods,source_needed,needs_source
-fact_0030,ing_bha,BHA,function,BHA is used to slow fat oxidation in some foods,source_needed,needs_source
-fact_0031,ing_bht,BHT,function,BHT is an antioxidant preservative used in some fat-containing foods,source_needed,needs_source
-fact_0032,ing_tbhq,TBHQ,function,TBHQ is used to protect oils and fried foods from oxidation,source_needed,needs_source
-fact_0033,ing_red_40,Red 40,color,Red 40 is a synthetic red color used in some candies drinks and snacks,source_needed,needs_source
-fact_0034,ing_yellow_5,Yellow 5,color,Yellow 5 is also known as tartrazine,source_needed,needs_source
-fact_0035,ing_blue_1,Blue 1,color,Blue 1 is also called Brilliant Blue FCF,source_needed,needs_source
-fact_0036,ing_annatto,Annatto,color,Annatto is an orange-yellow color from achiote seeds,general,draft
-fact_0037,ing_turmeric_color,Turmeric Color,color,Turmeric can be used as both a spice and a natural yellow color,general,draft
-fact_0038,ing_beet_juice_color,Beet Juice Color,color,Beet pigments can create red or pink food colors,general,draft
-fact_0039,ing_sucralose,Sucralose,sweetener,Sucralose is a high-intensity sweetener used at low levels,source_needed,needs_source
-fact_0040,ing_aspartame,Aspartame,sweetener,Aspartame-containing foods may need phenylalanine warnings for people with PKU,source_needed,needs_source
-fact_0041,ing_erythritol,Erythritol,sweetener,Erythritol is a sugar alcohol used in many low-sugar foods,source_needed,needs_source
-fact_0042,ing_xylitol,Xylitol,safety,Xylitol is dangerous to dogs even though it is used in human foods,source_needed,needs_source
-fact_0043,ing_allulose,Allulose,sweetener,Allulose is a rare sugar used in some low-sugar products,source_needed,needs_source
-fact_0044,ing_beta_glucan,Beta-Glucan,fiber,Beta-glucan contributes to the thick texture of oatmeal,source_needed,needs_source
-fact_0045,ing_inulin,Inulin,fiber,Inulin is often extracted from chicory root and used as soluble fiber,source_needed,needs_source
-fact_0046,ing_lactic_acid,Lactic Acid,fermentation,Lactic acid is produced during many food fermentations,general,draft
-fact_0047,ing_malic_acid,Malic Acid,flavor,Malic acid gives apples a tart taste,general,draft
-fact_0048,ing_tartaric_acid,Tartaric Acid,flavor,Tartaric acid is strongly associated with grapes and wine,general,draft
-fact_0049,ing_sesame_allergen,Sesame,allergen,Sesame can appear as seeds oil paste or tahini,source_needed,needs_source
-fact_0050,ing_mustard_allergen,Mustard,allergen,Mustard can hide in spice blends and prepared sauces,source_needed,needs_source
+fact_id,ingredient_id,canonical_name,fact_type,fact_text,evidence_level,review_status,citation_id
+fact_0001,ing_water,Water,chemistry,Water is the main solvent in most foods and cooking processes,general,draft,
+fact_0002,ing_salt,Salt,history,Salt was one of the earliest and most important food preservation tools,general,draft,
+fact_0003,ing_sugar,Sugar,function,Sugar affects sweetness browning moisture and texture,general,draft,
+fact_0004,ing_wheat_flour,Wheat Flour,function,Gluten-forming proteins in wheat flour help bread trap gas and rise,general,draft,
+fact_0005,ing_yeast,Yeast,biology,Baker's yeast produces carbon dioxide during fermentation,general,draft,
+fact_0006,ing_vinegar,Vinegar,fermentation,Vinegar is produced when microbes convert alcohol into acetic acid,general,draft,
+fact_0007,ing_honey,Honey,history,Honey has been used by humans since prehistoric times,general,draft,
+fact_0008,ing_olive_oil,Olive Oil,history,Olive oil has been central to Mediterranean cooking for thousands of years,general,draft,
+fact_0009,ing_corn_starch,Cornstarch,function,Cornstarch thickens sauces because starch granules swell when heated in water,general,draft,
+fact_0010,ing_gelatin,Gelatin,function,Gelatin makes heat-reversible gels that melt in the mouth,general,draft,
+fact_0011,ing_pectin,Pectin,function,Pectin helps jams and jellies set into a gel,general,draft,
+fact_0012,ing_xanthan_gum,Xanthan Gum,production,Xanthan gum is made by microbial fermentation,source_needed,needs_source,
+fact_0013,ing_guar_gum,Guar Gum,source,Guar gum comes from guar beans,source_needed,needs_source,
+fact_0014,ing_carrageenan,Carrageenan,source,Carrageenan comes from red seaweed,source_needed,needs_source,
+fact_0015,ing_soy_lecithin,Soy Lecithin,function,Lecithin helps oil and water stay mixed in foods,general,draft,
+fact_0016,ing_msg,Monosodium Glutamate,function,MSG adds umami flavor by supplying glutamate,general,draft,
+fact_0017,ing_disodium_inosinate,Disodium Inosinate,function,Disodium inosinate is often paired with glutamates to boost savory taste,source_needed,needs_source,
+fact_0018,ing_caffeine,Caffeine,chemistry,Caffeine is a bitter alkaloid found naturally in coffee tea and cacao,source_needed,needs_source,
+fact_0019,ing_theobromine,Theobromine,chemistry,Theobromine is one of cocoa's characteristic methylxanthines,source_needed,needs_source,
+fact_0020,ing_capsaicin,Capsaicin,chemistry,Capsaicin creates a heat sensation by activating heat-sensitive receptors,general,draft,
+fact_0021,ing_piperine,Piperine,chemistry,Piperine is a major pungent compound in black pepper,general,draft,
+fact_0022,ing_curcumin,Curcumin,color,Curcumin gives turmeric much of its yellow color,general,draft,
+fact_0023,ing_anthocyanins,Anthocyanins,color,Anthocyanins can shift color depending on acidity,general,draft,
+fact_0024,ing_lycopene,Lycopene,color,Lycopene is a red carotenoid found in tomatoes and watermelon,general,draft,
+fact_0025,ing_beta_carotene,Beta-Carotene,color,Beta-carotene gives orange color to carrots and some food colorants,general,draft,
+fact_0026,ing_sodium_benzoate,Sodium Benzoate,function,Sodium benzoate is mainly used to inhibit microbes in acidic foods,source_needed,needs_source,
+fact_0027,ing_potassium_sorbate,Potassium Sorbate,function,Potassium sorbate is commonly used to control mold and yeast,source_needed,needs_source,
+fact_0028,ing_sodium_nitrite,Sodium Nitrite,function,Sodium nitrite helps cured meats keep color and resist certain microbes,source_needed,needs_source,
+fact_0029,ing_sulfur_dioxide,Sulfur Dioxide,function,Sulfur dioxide helps prevent browning and spoilage in some foods,source_needed,needs_source,
+fact_0030,ing_bha,BHA,function,BHA is used to slow fat oxidation in some foods,source_needed,needs_source,
+fact_0031,ing_bht,BHT,function,BHT is an antioxidant preservative used in some fat-containing foods,source_needed,needs_source,
+fact_0032,ing_tbhq,TBHQ,function,TBHQ is used to protect oils and fried foods from oxidation,source_needed,needs_source,
+fact_0033,ing_red_40,Red 40,color,Red 40 is a synthetic red color used in some candies drinks and snacks,source_needed,needs_source,
+fact_0034,ing_yellow_5,Yellow 5,color,Yellow 5 is also known as tartrazine,source_needed,needs_source,
+fact_0035,ing_blue_1,Blue 1,color,Blue 1 is also called Brilliant Blue FCF,source_needed,needs_source,
+fact_0036,ing_annatto,Annatto,color,Annatto is an orange-yellow color from achiote seeds,general,draft,
+fact_0037,ing_turmeric_color,Turmeric Color,color,Turmeric can be used as both a spice and a natural yellow color,general,draft,
+fact_0038,ing_beet_juice_color,Beet Juice Color,color,Beet pigments can create red or pink food colors,general,draft,
+fact_0039,ing_sucralose,Sucralose,sweetener,Sucralose is a high-intensity sweetener used at low levels,source_needed,needs_source,
+fact_0040,ing_aspartame,Aspartame,sweetener,Aspartame-containing foods may need phenylalanine warnings for people with PKU,source_needed,needs_source,
+fact_0041,ing_erythritol,Erythritol,sweetener,Erythritol is a sugar alcohol used in many low-sugar foods,source_needed,needs_source,
+fact_0042,ing_xylitol,Xylitol,safety,Xylitol is dangerous to dogs even though it is used in human foods,source_needed,needs_source,
+fact_0043,ing_allulose,Allulose,sweetener,Allulose is a rare sugar used in some low-sugar products,source_needed,needs_source,
+fact_0044,ing_beta_glucan,Beta-Glucan,fiber,Beta-glucan contributes to the thick texture of oatmeal,source_needed,needs_source,
+fact_0045,ing_inulin,Inulin,fiber,Inulin is often extracted from chicory root and used as soluble fiber,source_needed,needs_source,
+fact_0046,ing_lactic_acid,Lactic Acid,fermentation,Lactic acid is produced during many food fermentations,general,draft,
+fact_0047,ing_malic_acid,Malic Acid,flavor,Malic acid gives apples a tart taste,general,draft,
+fact_0048,ing_tartaric_acid,Tartaric Acid,flavor,Tartaric acid is strongly associated with grapes and wine,general,draft,
+fact_0049,ing_sesame_allergen,Sesame,allergen,Sesame can appear as seeds oil paste or tahini,source_needed,needs_source,
+fact_0050,ing_mustard_allergen,Mustard,allergen,Mustard can hide in spice blends and prepared sauces,source_needed,needs_source,
+fact_0051,ing_sesame_allergen,Sesame,regulatory,FDA identifies sesame as the ninth major food allergen in the United States effective January 1 2023,official_regulatory,reviewed,cite_0011
+fact_0052,ing_yellow_5,Yellow 5,regulatory,FDA says products containing FD&C Yellow No. 5 must identify it on labels,official_regulatory,reviewed,cite_0012
+fact_0053,ing_sulfites_allergen,Sulfites,regulatory,FDA says sulfiting agents must be declared on food labels when present at 10 ppm or more total sulfites,official_regulatory,reviewed,cite_0013
+fact_0054,ing_milk_allergen,Milk,regulatory,FDA lists milk as one of the nine major food allergens in the United States,official_regulatory,reviewed,cite_0010
+fact_0055,ing_egg_allergen,Egg,regulatory,FDA lists eggs as one of the nine major food allergens in the United States,official_regulatory,reviewed,cite_0010
+fact_0056,ing_peanut_allergen,Peanut,regulatory,FDA lists peanuts as one of the nine major food allergens in the United States,official_regulatory,reviewed,cite_0010
+fact_0057,ing_wheat_allergen,Wheat,regulatory,FDA lists wheat as one of the nine major food allergens in the United States,official_regulatory,reviewed,cite_0010
+fact_0058,ing_soy_allergen,Soy,regulatory,FDA lists soybeans as one of the nine major food allergens in the United States,official_regulatory,reviewed,cite_0010
+fact_0059,ing_mustard_allergen,Mustard,regulatory,Health Canada lists mustard among priority food allergens,official_regulatory,reviewed,cite_0014
+fact_0060,ing_sulfites_allergen,Sulfites,regulatory,Health Canada lists sulphites among key substances associated with food allergies and allergic-type reactions,official_regulatory,reviewed,cite_0014
+fact_0061,ing_sesame_allergen,Sesame,regulatory,Health Canada lists sesame seeds among priority food allergens,official_regulatory,reviewed,cite_0014
+fact_0062,ing_tree_nut_allergen,Tree Nuts,regulatory,Health Canada lists tree nuts among priority food allergens,official_regulatory,reviewed,cite_0014
+fact_0063,ing_fish_allergen,Fish,regulatory,Health Canada lists fish among priority food allergens,official_regulatory,reviewed,cite_0014
+fact_0064,ing_shellfish_allergen,Crustaceans and Molluscs,regulatory,Health Canada lists crustaceans and molluscs among priority food allergens,official_regulatory,reviewed,cite_0014
+fact_0065,ing_natural_flavors,Natural Flavors,data_source,Open Food Facts API documentation says the API can provide ingredients and nutritional values of products,official_dataset,reviewed,cite_0002
+fact_0066,ing_natural_flavors,Natural Flavors,data_quality,Open Food Facts data is contributed voluntarily and its documentation warns there are no assurances it is accurate complete or reliable,official_dataset,reviewed,cite_0002
+fact_0067,ing_natural_flavors,Natural Flavors,api_use,Open Food Facts API documentation asks apps to use a custom User-Agent identifying the app and contact email,official_dataset,reviewed,cite_0015
+fact_0068,ing_natural_flavors,Natural Flavors,api_use,Open Food Facts read product queries are rate-limited according to the official API documentation,official_dataset,reviewed,cite_0015
