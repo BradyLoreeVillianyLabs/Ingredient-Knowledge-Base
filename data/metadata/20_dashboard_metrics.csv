@@ -1,0 +1,21 @@
+metric_id,metric_name,metric_type,description,source_table,calculation_hint,app_screen,review_status
+metric_0001,total_detected_ingredients,count,Number of ingredient terms detected from OCR,label_analysis_results,count matched plus unmatched terms,scan_summary,draft
+metric_0002,matched_ingredient_count,count,Number of detected terms matched to curated ingredient IDs,label_analysis_results,count matched_ingredients,scan_summary,draft
+metric_0003,unmatched_ingredient_count,count,Number of detected terms not matched,label_analysis_results,count unmatched_terms,scan_summary,draft
+metric_0004,match_confidence_average,score,Average confidence across matched terms,label_analysis_results,average confidence,scan_summary,draft
+metric_0005,needs_source_count,count,Matched rows that need citation review,evidence_packs,count review_status equals needs_source,scan_summary,draft
+metric_0006,allergen_flag_count,count,Potential allergen flags for jurisdiction,evidence_packs plus regulatory_status,count allergen category matches,scan_summary,needs_source
+metric_0007,additive_count,count,Detected ingredients categorized as additives,evidence_packs,count categories preservative sweetener color emulsifier etc,dashboard,draft
+metric_0008,preservative_count,count,Detected preservatives,evidence_packs,count category equals preservative,dashboard,draft
+metric_0009,sweetener_count,count,Detected sweeteners,evidence_packs,count category equals sweetener,dashboard,draft
+metric_0010,color_count,count,Detected colors,evidence_packs,count category equals color,dashboard,draft
+metric_0011,flavor_enhancer_count,count,Detected flavor enhancers,evidence_packs,count category equals flavor_enhancer,dashboard,draft
+metric_0012,stabilizer_thickener_count,count,Detected gums stabilizers thickeners,evidence_packs,count category in thickener stabilizer emulsifier,dashboard,draft
+metric_0013,source_type_breakdown,distribution,Plant animal mineral microbial synthetic mixed unknown breakdown,evidence_packs,group by source_type,dashboard,draft
+metric_0014,review_status_breakdown,distribution,How much of the scan is reviewed draft or needs_source,evidence_packs,group by review_status,dashboard,draft
+metric_0015,jurisdiction_warning_count,count,Regulatory or allergen warnings relevant to selected jurisdiction,regulatory_status,count requires_warning true for jurisdiction,dashboard,needs_source
+metric_0016,historical_range_summary,text,Summarize old vs modern ingredients,historical_use,group by history_estimate,dashboard,draft
+metric_0017,common_food_contexts,list,Common food contexts for detected ingredients,evidence_packs,merge common_foods fields,dashboard,draft
+metric_0018,top_evidence_fact,list,Best short fact for each ingredient,ingredient_facts,prefer reviewed then draft facts,report,draft
+metric_0019,uncertainty_notes,list,Explain why results should be interpreted carefully,label_analysis_results plus evidence_packs,collect low confidence and non-reviewed status,report,draft
+metric_0020,unknown_terms_for_review,list,Terms to feed back into database expansion,label_analysis_results,unmatched_terms,review_dashboard,draft
