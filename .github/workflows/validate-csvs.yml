@@ -21,3 +21,9 @@ jobs:
 
       - name: Validate CSV files
         run: python scripts/validate_csvs.py
+
+      - name: Build alias index
+        run: python scripts/build_alias_index.py
+
+      - name: Check generated alias index exists
+        run: test -s data/generated/ingredient_alias_index.csv
