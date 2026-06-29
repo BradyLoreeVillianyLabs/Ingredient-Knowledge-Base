@@ -19,6 +19,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Check Python syntax
+        run: python scripts/check_python_syntax.py
+
       - name: Run full build pipeline
         run: python scripts/build_all.py
 
