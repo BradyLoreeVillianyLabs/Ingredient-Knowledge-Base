@@ -1,0 +1,21 @@
+copy_id,screen,component,tone,text,review_status
+copy_0001,scan,empty_state,dramatic_clear,Point your camera at an ingredient label to reveal what is inside.,draft
+copy_0002,scan,processing,dramatic_clear,Reading the label and matching ingredients...,draft
+copy_0003,scan,low_confidence_warning,careful,Some words were hard to read. Review the original label before relying on results.,draft
+copy_0004,scan,unknown_terms,careful,Some detected terms are not yet in the knowledge base.,draft
+copy_0005,report,medical_disclaimer,careful,This report is educational and is not medical advice.,draft
+copy_0006,report,needs_source_label,careful,This note needs source verification before it should be treated as verified.,draft
+copy_0007,report,draft_label,careful,Draft educational note. Use with caution.,draft
+copy_0008,report,reviewed_label,confident,Source-reviewed.,draft
+copy_0009,report,expand_prompt,functional,Tap to expand details.,draft
+copy_0010,report,collapse_prompt,functional,Tap to collapse.,draft
+copy_0011,dashboard,additives_card,functional,Additive categories detected,draft
+copy_0012,dashboard,allergens_card,careful,Potential allergen flags,draft
+copy_0013,dashboard,unknown_card,functional,Unknown terms to review,draft
+copy_0014,dashboard,history_card,curious,Ancient staples vs modern isolated ingredients,draft
+copy_0015,dashboard,evidence_card,functional,Evidence and source status,draft
+copy_0016,ingredient_detail,common_foods,functional,Commonly seen in: {common_foods},draft
+copy_0017,ingredient_detail,function,functional,Why it is used: {functional_purpose},draft
+copy_0018,ingredient_detail,risk_note,careful,Important context: {risk_note},draft
+copy_0019,ingredient_detail,history,curious,Human use estimate: {history_estimate},draft
+copy_0020,review,feedback_prompt,functional,Help improve the scanner by reviewing unknown terms.,draft
