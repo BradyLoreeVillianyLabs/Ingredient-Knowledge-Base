@@ -60,6 +60,7 @@ def main() -> int:
     history = group_by_ingredient(DATA_DIR / "metadata" / "17_historical_use.csv")
     quips = group_by_ingredient(DATA_DIR / "metadata" / "28_ingredient_quips.csv")
     allergen_terms = group_by_ingredient(DATA_DIR / "metadata" / "31_allergen_label_terms.csv")
+    color_terms = group_by_ingredient(DATA_DIR / "metadata" / "32_color_additive_label_terms.csv")
 
     label_rules = read_csv(DATA_DIR / "metadata" / "29_source_backed_labeling_rules.csv")
     citations = {row.get("citation_id", ""): row for row in read_csv(DATA_DIR / "metadata" / "citation_registry.csv")}
@@ -84,6 +85,7 @@ def main() -> int:
             "history": history.get(ingredient_id, []),
             "quips": quips.get(ingredient_id, []),
             "allergen_label_terms": allergen_terms.get(ingredient_id, []),
+            "color_additive_label_terms": color_terms.get(ingredient_id, []),
             "source_backed_labeling_rules": [
                 row for row in label_rules
                 if row.get("trigger", "").lower().find(ingredient.get("canonical_name", "").lower()) >= 0
@@ -91,7 +93,7 @@ def main() -> int:
             ],
             "citations": {
                 row.get("citation_id", ""): citations.get(row.get("citation_id", ""), {})
-                for row in facts.get(ingredient_id, []) + regulatory.get(ingredient_id, []) + allergen_terms.get(ingredient_id, [])
+                for row in facts.get(ingredient_id, []) + regulatory.get(ingredient_id, []) + allergen_terms.get(ingredient_id, []) + color_terms.get(ingredient_id, [])
                 if row.get("citation_id")
             },
             "display_safety": {
