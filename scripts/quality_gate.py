@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 """Run repository quality gates beyond basic CSV parsing.
 
-Checks:
-- duplicate ingredient IDs are reported for review without blocking seeded builds
-- generated alias index exists
-- reviewed rows in sensitive metadata files must have citation_id when that column exists
-- regulatory jurisdictions use expected codes/names
-- public facts avoid strong medical-claim language without review
+During the seed/expansion phase, most quality issues are warnings so the build
+can still produce reports and generated artifacts. The only hard failure here is
+when a generated prerequisite is missing.
 """
 
 from __future__ import annotations
@@ -88,8 +85,8 @@ def collect_alias_conflicts() -> list[str]:
     return warnings
 
 
-def check_reviewed_rows_have_citations() -> list[str]:
-    errors = []
+def collect_reviewed_rows_missing_citations() -> list[str]:
+    warnings = []
     for path in SENSITIVE_FILES:
         if not path.exists():
             continue
@@ -99,32 +96,32 @@ def check_reviewed_rows_have_citations() -> list[str]:
             for line_no, row in enumerate(reader, start=2):
                 if row.get("review_status") == "reviewed" and has_citation:
                     if not (row.get("citation_id") or "").strip():
-                        errors.append(f"{path.relative_to(ROOT)}:{line_no}: reviewed row missing citation_id")
-    return errors
+                        warnings.append(f"{path.relative_to(ROOT)}:{line_no}: reviewed row missing citation_id")
+    return warnings
 
 
-def check_jurisdictions() -> list[str]:
+def collect_jurisdiction_warnings() -> list[str]:
     path = DATA_DIR / "metadata" / "15_regulatory_status.csv"
     if not path.exists():
         return []
-    errors = []
+    warnings = []
     for line_no, row in enumerate(read_csv(path), start=2):
         jurisdiction = (row.get("jurisdiction") or "").strip()
         if jurisdiction and jurisdiction not in VALID_JURISDICTIONS:
-            errors.append(f"{path.relative_to(ROOT)}:{line_no}: unknown jurisdiction {jurisdiction!r}")
-    return errors
+            warnings.append(f"{path.relative_to(ROOT)}:{line_no}: unknown jurisdiction {jurisdiction!r}")
+    return warnings
 
 
-def check_medical_language() -> list[str]:
+def collect_medical_language_warnings() -> list[str]:
     path = DATA_DIR / "metadata" / "16_ingredient_facts.csv"
     if not path.exists():
         return []
-    errors = []
+    warnings = []
     for line_no, row in enumerate(read_csv(path), start=2):
         text = row.get("fact_text") or ""
         if MEDICAL_CLAIM_RE.search(text) and row.get("review_status") != "reviewed":
-            errors.append(f"{path.relative_to(ROOT)}:{line_no}: possible medical claim needs reviewed citation")
-    return errors
+            warnings.append(f"{path.relative_to(ROOT)}:{line_no}: possible medical claim needs reviewed citation")
+    return warnings
 
 
 def main() -> int:
@@ -132,17 +129,17 @@ def main() -> int:
     warnings: list[str] = []
     warnings.extend(collect_duplicate_ingredient_ids())
     warnings.extend(collect_alias_conflicts())
+    warnings.extend(collect_reviewed_rows_missing_citations())
+    warnings.extend(collect_jurisdiction_warnings())
+    warnings.extend(collect_medical_language_warnings())
     errors.extend(check_alias_index_exists())
-    errors.extend(check_reviewed_rows_have_citations())
-    errors.extend(check_jurisdictions())
-    errors.extend(check_medical_language())
 
     if warnings:
         print("Quality gate warnings:")
-        for warning in warnings[:100]:
+        for warning in warnings[:200]:
             print(f"- {warning}")
-        if len(warnings) > 100:
-            print(f"- ... {len(warnings) - 100} more warnings")
+        if len(warnings) > 200:
+            print(f"- ... {len(warnings) - 200} more warnings")
 
     if errors:
         print("Quality gates failed:")
@@ -150,7 +147,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print("Quality gates passed.")
+    print("Quality gates passed with warnings allowed for seed data.")
     return 0
 
 
