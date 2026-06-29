@@ -1,0 +1,21 @@
+category_id,category_name,parent_category,app_use,common_scan_context,review_status,notes
+cat_0001,Bread and Bakery,Packaged Foods,dashboard_filter,bread|buns|tortillas|cakes|cookies,draft,High frequency for preservatives emulsifiers and flour ingredients
+cat_0002,Breakfast Cereals,Packaged Foods,dashboard_filter,cereal|granola|oatmeal,draft,Often contains fortification sweeteners colors and grains
+cat_0003,Snack Foods,Packaged Foods,dashboard_filter,chips|crackers|popcorn|pretzels,draft,High frequency for oils salt flavor enhancers colors
+cat_0004,Soft Drinks,Beverages,dashboard_filter,soda|pop|cola|energy drinks,draft,High frequency for acids colors sweeteners caffeine flavors
+cat_0005,Juices and Nectars,Beverages,dashboard_filter,fruit juice|nectar|juice drinks,draft,Often contains acids colors preservatives and added sugars
+cat_0006,Dairy Products,Refrigerated Foods,dashboard_filter,milk|cheese|yogurt|cream,draft,Allergen and stabilizer relevance
+cat_0007,Dairy Alternatives,Refrigerated Foods,dashboard_filter,plant milk|vegan cheese|plant yogurt,draft,Common stabilizers fortification and plant proteins
+cat_0008,Frozen Desserts,Frozen Foods,dashboard_filter,ice cream|gelato|frozen yogurt,draft,Common gums emulsifiers dairy allergens and colors
+cat_0009,Candy and Confectionery,Packaged Foods,dashboard_filter,candy|gummies|chocolate|mints,draft,Common sweeteners colors acids gelatin and flavors
+cat_0010,Sauces and Condiments,Pantry,dashboard_filter,ketchup|mustard|mayonnaise|barbecue sauce,draft,Common preservatives acids sweeteners gums and allergens
+cat_0011,Instant Noodles and Soups,Pantry,dashboard_filter,instant noodles|soup mix|ramen,draft,Common sodium flavor enhancers oils and starches
+cat_0012,Processed Meats,Refrigerated Foods,dashboard_filter,bacon|ham|sausage|deli meat,needs_source,Nitrite nitrate phosphate and sodium relevance
+cat_0013,Plant-Based Meat Alternatives,Refrigerated Foods,dashboard_filter,veggie burger|plant sausage|meat alternative,draft,Plant proteins oils methylcellulose flavors colors
+cat_0014,Protein Bars and Powders,Nutrition Products,dashboard_filter,protein bar|protein powder|shake,draft,Sweeteners protein isolates fibers and flavors
+cat_0015,Baby and Toddler Foods,Special Category,dashboard_filter,infant food|toddler snack|pouch,needs_source,Needs stricter safety language and citations
+cat_0016,Gluten-Free Products,Special Diet,dashboard_filter,gluten-free bread|gluten-free snack,draft,Gums starches rice tapioca and allergen logic
+cat_0017,Keto and Low Carb Products,Special Diet,dashboard_filter,keto snack|low carb bar,draft,Sugar alcohols fibers high-intensity sweeteners
+cat_0018,Organic Products,Label Claim,dashboard_filter,organic packaged food,draft,Useful but does not guarantee additive-free
+cat_0019,Fermented Foods,Food Process,dashboard_filter,yogurt|kimchi|sauerkraut|kombucha,draft,Lactic acid cultures acidity and preservation relevance
+cat_0020,Canned Foods,Pantry,dashboard_filter,canned soup|beans|vegetables,draft,Sodium acids EDTA and can-lining concerns need careful handling
