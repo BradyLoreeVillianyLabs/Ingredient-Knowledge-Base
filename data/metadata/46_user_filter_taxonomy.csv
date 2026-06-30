@@ -1,0 +1,21 @@
+filter_id,filter_group,display_name,matched_categories,matched_terms,default_visibility,description,review_status
+filter_allergens,health_safety,Major allergens,allergen,milk|egg|fish|shellfish|peanut|tree nut|wheat|soy|sesame,on,Highlights ingredients associated with common priority allergens.,reviewed
+filter_gluten,health_safety,Gluten-related ingredients,allergen_or_intolerance,wheat|barley|rye|malt|gluten,on,Highlights wheat barley rye malt and other gluten-related terms.,reviewed
+filter_sulfites,health_safety,Sulfites,preservative|allergen_like_sensitivity,sulfite|sulfur dioxide|metabisulfite,on,Highlights sulfite preservatives and related sensitivity terms.,reviewed
+filter_pet_xylitol,health_safety,Pet safety xylitol,sweetener,xylitol,on,Warns when xylitol appears because it is dangerous to dogs.,reviewed
+filter_high_intensity_sweeteners,preference,High-intensity sweeteners,sweetener,aspartame|sucralose|stevia|monk fruit|acesulfame|saccharin,on,Groups sweeteners that provide strong sweetness with little bulk.,reviewed
+filter_sugar_alcohols,preference,Sugar alcohols,sweetener,erythritol|xylitol|sorbitol|maltitol|mannitol|isomalt,on,Groups polyol sweeteners that may affect digestion in larger amounts.,reviewed
+filter_added_sugars,preference,Added sweetener terms,sweetener,sugar|dextrose|glucose|fructose|corn syrup|honey|molasses|agave,on,Groups common caloric sweetener terms.,reviewed
+filter_synthetic_colors,preference,Synthetic colors,color,Red 40|Yellow 5|Yellow 6|Blue 1|Blue 2|Green 3,on,Highlights synthetic food color terms.,reviewed
+filter_natural_colors,preference,Natural color sources,color,annatto|turmeric|beet|paprika|spirulina|chlorophyll,off,Groups color sources derived from plant mineral or natural materials.,reviewed
+filter_preservatives,food_function,Preservatives,preservative,benzoate|sorbate|propionate|nitrite|sulfite|BHA|BHT|TBHQ,on,Highlights ingredients used for preservation or quality protection.,reviewed
+filter_emulsifiers,food_function,Emulsifiers,emulsifier,lecithin|mono- and diglycerides|polysorbate|DATEM|SSL,on,Highlights ingredients used to improve mixing and texture.,reviewed
+filter_thickeners,food_function,Thickeners and gums,thickener|stabilizer,xanthan|guar|carrageenan|pectin|agar|cellulose gum,on,Highlights ingredients used for thickness gel structure and suspension.,reviewed
+filter_acidulants,food_function,Acids and acidity regulators,acidulant|acidity_regulator,citric acid|malic acid|lactic acid|acetic acid|phosphoric acid,on,Highlights ingredients used for tartness and acidity balance.,reviewed
+filter_leaveners,food_function,Leavening agents,leavening_agent,baking soda|monocalcium phosphate|SAPP|cream of tartar,on,Highlights ingredients used in baking rise and texture.,reviewed
+filter_fortification,nutrition,Vitamins and minerals,vitamin|mineral,vitamin|calcium|iron|zinc|iodine|potassium,on,Highlights added nutrients and mineral salts.,reviewed
+filter_plant_proteins,nutrition,Plant proteins,protein,soy protein|pea protein|rice protein|wheat gluten|fava protein,on,Highlights plant protein ingredients and allergen source.,reviewed
+filter_dairy_proteins,nutrition,Dairy proteins,protein,whey|casein|milk protein,on,Highlights milk-derived protein ingredients.,reviewed
+filter_caffeine,preference,Caffeine sources,beverage_compound|beverage_base,caffeine|coffee|green tea|guarana|yerba mate,on,Highlights direct and botanical caffeine sources.,reviewed
+filter_alliums,diet_preference,Alliums,whole_food,garlic|onion|shallot|leek|chives,off,Optional filter for users tracking allium or FODMAP-style ingredients.,reviewed
+filter_animal_derived,diet_preference,Animal-derived ingredients,protein|dairy|meat|seafood,gelatin|rennet|whey|casein|fish|pork|beef|chicken,on,Highlights ingredients that may matter for vegetarian vegan or religious filters.,reviewed

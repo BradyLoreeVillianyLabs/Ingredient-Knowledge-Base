@@ -1,0 +1,13 @@
+column_name,required,description
+ingredient_id,yes,Stable lowercase slug such as ing_water
+canonical_name,yes,Preferred display name
+category,yes,Primary list category
+subcategory,no,More specific function or family
+common_aliases,no,Pipe-separated aliases
+source_type,no,plant|animal|mineral|microbial|synthetic|mixed|unknown
+functional_purpose,no,Why it appears in food
+common_foods,no,Pipe-separated typical foods
+history_estimate,no,Approximate era humans have consumed it or its source
+app_note,no,Plain-language educational note
+risk_note,no,Neutral caution note; not medical advice
+review_status,yes,draft|needs_source|reviewed

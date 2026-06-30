@@ -1,0 +1,71 @@
+name: Validate ingredient CSVs
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+      - feature/ingredient-list-package
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Check Python syntax
+        run: python scripts/check_python_syntax.py
+
+      - name: Validate CSV files
+        run: python scripts/validate_csvs.py
+
+      - name: Build alias index
+        run: python scripts/build_alias_index.py
+
+      - name: Generate rich ingredient profiles
+        run: python scripts/generate_rich_ingredient_profiles.py
+
+      - name: Run quality gates
+        run: python scripts/quality_gate.py
+
+      - name: Export JSON package
+        run: python scripts/export_json_pack.py
+
+      - name: Build evidence packs
+        run: python scripts/build_evidence_packs.py
+
+      - name: Build dataset report
+        run: python scripts/build_dataset_report.py
+
+      - name: Audit missing data
+        run: python scripts/audit_missing_data.py
+
+      - name: Compile SQLite database
+        run: python scripts/compile_sqlite.py --output dist/ingredient_knowledge_base.sqlite
+
+      - name: Package release ZIPs
+        run: python scripts/package_release.py
+
+      - name: Run smoke tests
+        run: python tests/smoke_test_pipeline.py
+
+      - name: Check generated artifacts
+        run: |
+          test -s dist/ingredient_knowledge_base.sqlite
+          test -s dist/ingredient-knowledge-base-csv.zip
+          test -s dist/ingredient-knowledge-base-json.zip
+          test -s data/generated/json/ingredients.json
+          test -s data/generated/evidence_packs_index.json
+          test -s data/generated/rich_ingredient_profiles.csv
+          test -s docs/DATASET_REPORT.md
+          test -s docs/MISSING_DATA_REPORT.md
+
+      - name: Check rich profile row count
+        run: python scripts/check_rich_profile_count.py

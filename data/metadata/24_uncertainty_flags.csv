@@ -1,0 +1,16 @@
+flag_id,flag_name,severity,trigger_logic,public_copy,internal_action,review_status
+flag_0001,Unmatched Term,medium,term not matched to alias index,This term was detected but not matched to the knowledge base.,Add to unknown ingredient review queue.,draft
+flag_0002,OCR Correction Used,low,match_type equals ocr_alias,The scanner corrected a likely text-recognition error.,Show original and corrected term.,draft
+flag_0003,Low Confidence OCR,medium,ocr_confidence below threshold,The label text was hard to read. Results may be incomplete.,Ask user to retake photo or crop label.,draft
+flag_0004,Low Confidence Ingredient Match,medium,match confidence below 0.85,This ingredient match is uncertain.,Require user confirmation before showing detailed claims.,draft
+flag_0005,Needs Source Review,medium,review_status equals needs_source,This information needs source verification.,Hide verified-claim styling.,draft
+flag_0006,Draft Educational Content,low,review_status equals draft,This is draft educational content.,Show draft label when public mode is strict.,draft
+flag_0007,Jurisdiction Sensitive,high,regulatory_status has jurisdiction-specific row,Rules may differ depending on location.,Require selected jurisdiction.,needs_source
+flag_0008,Potential Allergen,high,category equals allergen,Potential allergen-related term detected.,Show allergen section expanded.,needs_source
+flag_0009,Sulfite Sensitivity,high,ingredient in sulfite family,Sulfite-related preservative detected.,Show sulfite note with jurisdiction-specific wording.,needs_source
+flag_0010,PKU Phenylalanine Warning,high,ingredient_id equals ing_aspartame,Aspartame-related phenylalanine warning may apply.,Show only with source-backed jurisdiction copy.,needs_source
+flag_0011,Pet Safety Xylitol,high,ingredient_id equals ing_xylitol,Xylitol is dangerous to dogs even though it is used in human foods.,Show pet-safety warning if product may be accessible to pets.,needs_source
+flag_0012,Modern Additive Context,low,history_estimate contains modern,This ingredient is a modern isolated additive or refined ingredient.,Show history section collapsed by default.,draft
+flag_0013,Not Medical Advice,system,always,This scan is educational and is not medical advice.,Always show in report footer.,draft
+flag_0014,Regulatory Claim Hidden,system,regulatory row not reviewed,Regulatory details are hidden until verified.,Hide in public release mode.,draft
+flag_0015,Fact Hidden,system,fact review_status equals needs_source and public strict mode,Some facts are hidden because they need review.,Hide or show in developer mode only.,draft

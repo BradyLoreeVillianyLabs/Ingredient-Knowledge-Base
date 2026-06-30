@@ -1,0 +1,21 @@
+badge_id,badge_name,badge_type,trigger_logic,display_priority,color_hint,icon_hint,public_copy,review_status
+badge_0001,Common Staple,category,category equals core,10,neutral,grain,Common everyday ingredient.,draft
+badge_0002,Preservative,category,category equals preservative,20,amber,shield,Used to help slow spoilage or quality loss.,needs_source
+badge_0003,Sweetener,category,category equals sweetener,30,pink,sparkles,Used to add sweetness or sweet taste.,draft
+badge_0004,Sugar Alcohol,subcategory,subcategory equals sugar alcohol,31,pink,hexagon,Sugar alcohol detected. Large amounts may affect digestion for some people.,needs_source
+badge_0005,High-Intensity Sweetener,subcategory,subcategory equals high-intensity sweetener,32,purple,bolt,Very sweet ingredient used in small amounts.,needs_source
+badge_0006,Color Additive,category,category equals color,40,blue,palette,Used to change or enhance food color.,needs_source
+badge_0007,Synthetic Color,subcategory,subcategory contains synthetic,41,blue,palette,Synthetic food color detected.,needs_source
+badge_0008,Natural Color,subcategory,subcategory contains natural,42,green,leaf,Naturally derived color source detected.,draft
+badge_0009,Flavor Enhancer,category,category equals flavor_enhancer,50,red,waves,Used to boost savory sweet or aromatic flavor perception.,draft
+badge_0010,Texture System,category,category in emulsifier|stabilizer|thickener,60,cyan,layers,Used to modify texture thickness stability or mouthfeel.,draft
+badge_0011,Potential Allergen,category,category equals allergen,5,red,alert,Potential allergen-related term detected. Check the label and local rules.,needs_source
+badge_0012,Vitamin or Mineral,category,category in vitamin|mineral,70,green,plus,Nutrient or fortification ingredient detected.,needs_source
+badge_0013,Protein Ingredient,subcategory,subcategory contains protein,75,green,dumbbell,Protein ingredient detected.,draft
+badge_0014,Modern Isolated Additive,history,history_estimate contains modern,80,gray,flask,Modern isolated ingredient or additive context.,draft
+badge_0015,Ancient Food Use,history,history_estimate contains ancient,90,gold,history,Ingredient or source has a long history of food use.,draft
+badge_0016,Needs Source Review,review_status,review_status equals needs_source,1,orange,warning,This item needs source verification before being shown as a verified claim.,draft
+badge_0017,Draft Knowledge,review_status,review_status equals draft,2,gray,pencil,Draft educational knowledge. Use with caution.,draft
+badge_0018,Source Reviewed,review_status,review_status equals reviewed,3,green,check,Source-reviewed entry.,draft
+badge_0019,OCR Corrected,match_type,match_type equals ocr_alias,4,orange,scan,The scanner corrected a likely OCR spelling issue.,draft
+badge_0020,Low Confidence Match,confidence,confidence below 0.85,6,orange,question,Match confidence is low. Compare with the original label.,draft

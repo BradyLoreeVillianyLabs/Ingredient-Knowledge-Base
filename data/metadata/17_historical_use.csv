@@ -1,0 +1,51 @@
+history_id,ingredient_id,canonical_name,history_estimate,confidence,region_or_origin,notes,review_status
+hist_0001,ing_water,Water,prehistoric,high,global,Essential to all human food preparation,draft
+hist_0002,ing_salt,Salt,prehistoric to ancient,high,global,Used for seasoning and preservation since early human societies,draft
+hist_0003,ing_honey,Honey,prehistoric,high,global,Wild honey gathering predates agriculture,draft
+hist_0004,ing_wheat_flour,Wheat Flour,ancient,high,Fertile Crescent,Wheat domestication supports long flour consumption,draft
+hist_0005,ing_rice,Rice,ancient,high,Asia,One of the world's oldest staple grains,draft
+hist_0006,ing_corn,Corn,ancient Americas,high,Mesoamerica,Domesticated from teosinte,draft
+hist_0007,ing_oats,Oats,ancient,medium,Europe and West Asia,Long-used cereal grain,draft
+hist_0008,ing_olive_oil,Olive Oil,ancient,high,Mediterranean,Major ancient cooking and trade oil,draft
+hist_0009,ing_sesame_seed,Sesame Seed,ancient,high,Africa and Asia,One of the oldest oilseed crops,draft
+hist_0010,ing_garlic,Garlic,ancient,high,Central Asia and Mediterranean,Long culinary and cultural use,draft
+hist_0011,ing_onion,Onion,ancient,high,Asia and Mediterranean,Long-used allium crop,draft
+hist_0012,ing_black_pepper,Black Pepper,ancient,high,South Asia,Major historic spice trade ingredient,draft
+hist_0013,ing_cinnamon,Cinnamon,ancient,high,South and Southeast Asia,Ancient spice trade ingredient,draft
+hist_0014,ing_ginger,Ginger,ancient,high,South and Southeast Asia,Long-used rhizome spice,draft
+hist_0015,ing_turmeric,Turmeric,ancient,high,South Asia,Long-used spice and color source,draft
+hist_0016,ing_cumin,Cumin,ancient,high,Eastern Mediterranean and West Asia,Ancient seed spice,draft
+hist_0017,ing_coriander_seed,Coriander Seed,ancient,high,Mediterranean and West Asia,Ancient spice and herb crop,draft
+hist_0018,ing_vinegar,Vinegar,ancient,high,global fermentation regions,Appears wherever alcoholic fermentation was followed by acetification,draft
+hist_0019,ing_yeast,Yeast,ancient,high,global fermentation regions,Used unintentionally and intentionally in bread and alcohol fermentation,draft
+hist_0020,ing_cheese,Cheese,ancient,high,domestication regions,Fermented dairy dates to early animal husbandry,draft
+hist_0021,ing_yogurt,Yogurt,ancient,high,Central and West Asia,Fermented milk traditions are very old,draft
+hist_0022,ing_butter,Butter,ancient,high,dairy pastoral regions,Concentrated milk fat from dairy animals,draft
+hist_0023,ing_cocoa_powder,Cocoa Powder,modern powder ancient cacao,medium,Mesoamerica and global,Cacao use is ancient; cocoa powder is a modern processed form,draft
+hist_0024,ing_chocolate,Chocolate,modern bar ancient cacao,medium,Mesoamerica and global,Ancient cacao drinks preceded modern chocolate,draft
+hist_0025,ing_coffee,Coffee,medieval to modern,medium,Ethiopia and Yemen,Beverage use spread globally after early coffee cultures,draft
+hist_0026,ing_tea,Tea,ancient,medium,China,Tea drinking has ancient roots; add ingredient row if needed,needs_source
+hist_0027,ing_vanilla,Vanilla,ancient regional modern global,medium,Mesoamerica,Vanilla orchid use predates global extract trade,draft
+hist_0028,ing_tomato_paste,Tomato Paste,modern from ancient tomato use,medium,Americas and global,Tomato is ancient Americas crop; paste is modern processing,draft
+hist_0029,ing_potato,Potato,ancient Americas,high,Andes,Staple tuber domesticated in South America,draft
+hist_0030,ing_sugar,Sugar,ancient to medieval refined,medium,South and Southeast Asia,Sugarcane use is ancient; refined sugar expanded later,draft
+hist_0031,ing_maple_syrup,Maple Syrup,indigenous North America,medium,North America,Indigenous peoples processed maple sap before modern industry,draft
+hist_0032,ing_soy_sauce_powder,Soy Sauce Powder,modern from ancient soy sauce,medium,East Asia and global,Fermented soy sauce is old; dehydrated powder is modern,draft
+hist_0033,ing_msg,Monosodium Glutamate,modern isolated,high,Japan and global,Isolated MSG is a 20th-century ingredient,needs_source
+hist_0034,ing_sodium_benzoate,Sodium Benzoate,modern,high,industrial food systems,Modern preservative from benzoate chemistry,needs_source
+hist_0035,ing_potassium_sorbate,Potassium Sorbate,modern,high,industrial food systems,Modern preservative widely used for mold and yeast control,needs_source
+hist_0036,ing_sodium_nitrite,Sodium Nitrite,modern isolated ancient curing context,medium,global curing traditions,Curing is ancient; purified nitrite use is modern,needs_source
+hist_0037,ing_bha,BHA,modern,high,industrial food systems,Synthetic antioxidant preservative,needs_source
+hist_0038,ing_bht,BHT,modern,high,industrial food systems,Synthetic antioxidant preservative,needs_source
+hist_0039,ing_tbhq,TBHQ,modern,high,industrial food systems,Synthetic antioxidant preservative,needs_source
+hist_0040,ing_xanthan_gum,Xanthan Gum,modern,high,industrial food systems,Fermentation-derived gum from modern food technology,needs_source
+hist_0041,ing_guar_gum,Guar Gum,modern isolated ancient source,medium,South Asia and global,Guar plant is older; isolated gum use is modern,needs_source
+hist_0042,ing_carrageenan,Carrageenan,modern isolated ancient seaweed use,medium,coastal regions,Seaweed food use is old; refined carrageenan is modern,needs_source
+hist_0043,ing_aspartame,Aspartame,modern,high,industrial food systems,Modern high-intensity sweetener,needs_source
+hist_0044,ing_sucralose,Sucralose,modern,high,industrial food systems,Modern high-intensity sweetener,needs_source
+hist_0045,ing_stevia,Steviol Glycosides,modern extract older plant use,medium,South America and global,Stevia plant use predates modern purified glycosides,needs_source
+hist_0046,ing_allulose,Allulose,modern,high,industrial food systems,Rare sugar recently commercialized in foods,needs_source
+hist_0047,ing_red_40,Red 40,modern,high,industrial food systems,Synthetic color additive,needs_source
+hist_0048,ing_yellow_5,Yellow 5,modern,high,industrial food systems,Synthetic color additive,needs_source
+hist_0049,ing_annatto,Annatto,ancient Americas,medium,Americas,Natural color and seasoning from achiote seeds,draft
+hist_0050,ing_beta_carotene,Beta-Carotene,ancient source modern isolated,medium,plant foods globally,Consumed naturally in plants long before isolation,draft

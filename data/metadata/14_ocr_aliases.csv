@@ -1,0 +1,61 @@
+alias_id,raw_ocr_text,normalized_text,ingredient_id,confidence,notes
+ocr_0001,sodlum chloride,sodium chloride,ing_salt,0.92,Common OCR confusion i/l
+ocr_0002,sodium chioride,sodium chloride,ing_salt,0.9,Common OCR confusion l/i
+ocr_0003,monosodlum glutamate,monosodium glutamate,ing_msg,0.9,Common OCR confusion i/l
+ocr_0004,monosodium giutamate,monosodium glutamate,ing_msg,0.88,Common OCR confusion l/i
+ocr_0005,ascorblc acid,ascorbic acid,ing_vitamin_c,0.9,Common OCR confusion i/l
+ocr_0006,cltrlc acid,citric acid,ing_citric_acid,0.88,Multiple OCR substitutions
+ocr_0007,citrlc acld,citric acid,ing_citric_acid,0.9,Common OCR substitutions
+ocr_0008,soy leclthin,soy lecithin,ing_soy_lecithin,0.9,Common OCR confusion i/l
+ocr_0009,sunfiower lecithin,sunflower lecithin,ing_sunflower_lecithin,0.87,OCR may read l as i
+ocr_0010,xanthan gurn,xanthan gum,ing_xanthan_gum,0.9,OCR rn/m confusion
+ocr_0011,guar gurn,guar gum,ing_guar_gum,0.9,OCR rn/m confusion
+ocr_0012,carrageenan,carrageenan,ing_carrageenan,0.99,Exact label term
+ocr_0013,carageenan,carrageenan,ing_carrageenan,0.86,Missing r
+ocr_0014,potasslum sorbate,potassium sorbate,ing_potassium_sorbate,0.9,Common OCR confusion i/l
+ocr_0015,sodlum benzoate,sodium benzoate,ing_sodium_benzoate,0.91,Common OCR confusion i/l
+ocr_0016,calclum propionate,calcium propionate,ing_calcium_propionate,0.91,Common OCR confusion i/l
+ocr_0017,sodlum nitrite,sodium nitrite,ing_sodium_nitrite,0.91,Common OCR confusion i/l
+ocr_0018,sodlum nitrate,sodium nitrate,ing_sodium_nitrate,0.91,Common OCR confusion i/l
+ocr_0019,red4O,red 40,ing_red_40,0.85,OCR zero/O issue
+ocr_0020,red 4O,red 40,ing_red_40,0.9,OCR zero/O issue
+ocr_0021,yeliow 5,yellow 5,ing_yellow_5,0.88,OCR l/i issue
+ocr_0022,yeliow 6,yellow 6,ing_yellow_6,0.88,OCR l/i issue
+ocr_0023,biue 1,blue 1,ing_blue_1,0.88,OCR l/i issue
+ocr_0024,caramei color,caramel color,ing_caramel_color,0.9,OCR l/i issue
+ocr_0025,annatto,annatto,ing_annatto,0.99,Exact label term
+ocr_0026,beta carotene,beta-carotene,ing_beta_carotene,0.95,Hyphen normalization
+ocr_0027,high fructose corn symp,high fructose corn syrup,ing_high_fructose_corn_syrup,0.87,OCR r/m issue
+ocr_0028,com syrup,corn syrup,ing_corn_syrup,0.82,OCR rn/m issue
+ocr_0029,maitodextrin,maltodextrin,ing_maltodextrin,0.88,OCR l/i issue
+ocr_0030,matlodextrin,maltodextrin,ing_maltodextrin,0.87,Transposed letters
+ocr_0031,dextrose,dextrose,ing_dextrose,0.99,Exact label term
+ocr_0032,sucralose,sucralose,ing_sucralose,0.99,Exact label term
+ocr_0033,aspartarne,aspartame,ing_aspartame,0.9,OCR m/rn issue
+ocr_0034,acesuifame potassium,acesulfame potassium,ing_acesulfame_potassium,0.88,OCR l/i issue
+ocr_0035,acesulfame potasslum,acesulfame potassium,ing_acesulfame_potassium,0.88,OCR i/l issue
+ocr_0036,erythritoi,erythritol,ing_erythritol,0.9,OCR l/i issue
+ocr_0037,xylitoi,xylitol,ing_xylitol,0.9,OCR l/i issue
+ocr_0038,sorbitol,sorbitol,ing_sorbitol,0.99,Exact label term
+ocr_0039,modified food starch,modified food starch,ing_modified_food_starch,0.99,Exact label term
+ocr_0040,modlfied food starch,modified food starch,ing_modified_food_starch,0.9,OCR i/l issue
+ocr_0041,naturai flavors,natural flavors,ing_natural_flavors,0.9,OCR l/i issue
+ocr_0042,artificiai flavors,artificial flavors,ing_artificial_flavors,0.9,OCR l/i issue
+ocr_0043,yeast extracf,yeast extract,ing_yeast_extract,0.86,OCR t/f issue
+ocr_0044,hydrolyzed vegetabie protein,hydrolyzed vegetable protein,ing_hydrolyzed_vegetable_protein,0.9,OCR l/i issue
+ocr_0045,disodlum inosinate,disodium inosinate,ing_disodium_inosinate,0.9,OCR i/l issue
+ocr_0046,disodlum guanylate,disodium guanylate,ing_disodium_guanylate,0.9,OCR i/l issue
+ocr_0047,canola oli,canola oil,ing_canola_oil,0.88,OCR oil/oli issue
+ocr_0048,soybean oli,soybean oil,ing_soybean_oil,0.88,OCR oil/oli issue
+ocr_0049,sunfiower oil,sunflower oil,ing_sunflower_oil,0.87,OCR l/i issue
+ocr_0050,olive oli,olive oil,ing_olive_oil,0.88,OCR oil/oli issue
+ocr_0051,whey proteln,whey protein,ing_whey_protein,0.9,OCR i/l issue
+ocr_0052,soy proteln isolate,soy protein isolate,ing_soy_protein_isolate,0.9,OCR i/l issue
+ocr_0053,pea proteln,pea protein,ing_pea_protein,0.9,OCR i/l issue
+ocr_0054,vitamln c,vitamin c,ing_vitamin_c,0.9,OCR i/l issue
+ocr_0055,vitamln d3,vitamin d3,ing_vitamin_d3,0.9,OCR i/l issue
+ocr_0056,foiic acid,folic acid,ing_vitamin_b9,0.88,OCR l/i issue
+ocr_0057,ribofiavin,riboflavin,ing_vitamin_b2,0.88,OCR l/i issue
+ocr_0058,niacln,niacin,ing_vitamin_b3,0.9,OCR i/l issue
+ocr_0059,calclum carbonate,calcium carbonate,ing_calcium,0.9,OCR i/l issue
+ocr_0060,ferrous suifate,ferrous sulfate,ing_iron,0.88,OCR l/i issue

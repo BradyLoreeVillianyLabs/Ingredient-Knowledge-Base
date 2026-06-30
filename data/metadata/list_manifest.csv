@@ -1,0 +1,35 @@
+list_id,path,title,status,row_count_target,notes
+01,data/core/01_core_ingredients.csv,Core Ingredients,seeded,500,Foundation list for common recognizable ingredients
+02,data/additives/02_preservatives.csv,Preservatives,seeded,200,Add source-backed regulatory summaries before production
+03,data/additives/03_sweeteners.csv,Sweeteners,seeded,150,Separate nutritive non-nutritive and sugar alcohols
+04,data/additives/04_emulsifiers_stabilizers_thickeners.csv,Emulsifiers Stabilizers Thickeners,seeded,250,Split into separate files later if useful
+05,data/additives/05_colors.csv,Food Colors,seeded,150,Track country-specific regulatory status
+06,data/safety/06_common_allergens.csv,Common Allergens,seeded,100,Jurisdiction-specific allergen rules needed
+07,data/culinary/07_oils_and_fats.csv,Oils and Fats,seeded,200,Add fatty acid profile fields later
+08,data/nutrition/08_vitamins.csv,Vitamins,seeded,50,Add vitamin aliases and fortification terms
+09,data/nutrition/09_minerals.csv,Minerals,seeded,75,Add salts and mineral forms
+10,data/nutrition/10_amino_acids.csv,Amino Acids,seeded,60,Include protein-building and specialty amino acids
+11,data/additives/11_flavor_enhancers.csv,Flavor Enhancers,seeded,150,Include glutamates nucleotides yeast extracts
+12,data/culinary/12_spices_herbs.csv,Spices and Herbs,seeded,300,Common culinary and label terms
+13,data/compounds/13_food_compounds.csv,Food Compounds,seeded,1000,Compound layer for FooDB-style enrichment
+14,data/metadata/14_ocr_aliases.csv,OCR Aliases,seeded,5000,Misspellings abbreviations and scan correction terms
+15,data/metadata/15_regulatory_status.csv,Regulatory Status,seeded,1000,FDA EFSA Health Canada status fields
+16,data/metadata/16_ingredient_facts.csv,Ingredient Facts,seeded,5000,Short app-friendly facts with evidence level
+17,data/metadata/17_historical_use.csv,Historical Use,seeded,1000,Consumption history estimates with confidence
+18,data/metadata/18_common_combinations.csv,Common Combinations,seeded,10000,Generated from Open Food Facts co-occurrence mining
+19,data/metadata/19_food_categories.csv,Food Categories,seeded,200,App category filters and dashboard contexts
+20,data/metadata/20_dashboard_metrics.csv,Dashboard Metrics,seeded,100,Definitions for dashboard cards
+21,data/metadata/21_report_sections.csv,Report Sections,seeded,50,Expandable report sections and app copy templates
+22,data/metadata/22_ui_copy.csv,UI Copy,seeded,200,Reusable scan report dashboard and review copy
+23,data/metadata/23_scan_badges.csv,Scan Badges,seeded,100,Visual badges for scan and report UI
+24,data/metadata/24_uncertainty_flags.csv,Uncertainty Flags,seeded,100,Safe explanation of confidence source and review caveats
+25,data/metadata/25_label_parser_rules.csv,Label Parser Rules,seeded,100,Rules for cleaning splitting and preserving label structure
+26,data/metadata/26_ocr_error_patterns.csv,OCR Error Patterns,seeded,200,Character confusion and correction patterns
+27,data/metadata/27_verified_public_sources.csv,Verified Public Sources,seeded,100,Public lookupable official sources checked before citation use
+28,data/metadata/28_ingredient_quips.csv,Ingredient Quips,seeded,500,Optional fun-mode jokes and quips kept separate from evidence fields
+29,data/metadata/29_source_backed_labeling_rules.csv,Source-Backed Labeling Rules,seeded,200,Official citation-backed display and parser rules for labels
+30,data/metadata/30_placeholder_replacement_tracker.csv,Placeholder Replacement Tracker,seeded,100,Tracks draft fields and the source-backed replacement path
+31,data/metadata/31_allergen_label_terms.csv,Allergen Label Terms,seeded,500,Source-backed allergen aliases and derived label terms
+32,data/metadata/32_color_additive_label_terms.csv,Color Additive Label Terms,seeded,500,Source-backed FDA color additive label terms
+33,data/metadata/33_sweetener_label_terms.csv,Sweetener Label Terms,seeded,500,Source-backed FDA sweetener label terms
+34,data/generated/rich_ingredient_profiles.csv,Rich Ingredient Profiles,generated,500,Generated app enrichment profiles with health-conscious notes stories fun facts odd uses and quips
