@@ -1,0 +1,25 @@
+sweetener_term_id,ingredient_id,canonical_sweetener,detected_term,sweetener_type,jurisdiction,citation_id,review_status,app_action,notes
+sweet_0001,ing_aspartame,Aspartame,Aspartame,authorized_food_additive,US,cite_0017,reviewed,flag_sweetener,FDA page says this is approved for use in food as a sweetener
+sweet_0002,ing_aspartame,Aspartame,phenylalanine,label_warning_term,US,cite_0017,reviewed,flag_label_note,FDA page says aspartame labels must include a phenylalanine statement
+sweet_0003,ing_acesulfame_potassium,Acesulfame Potassium,Acesulfame Potassium,authorized_food_additive,US,cite_0017,reviewed,flag_sweetener,FDA page says this is approved for use in food as a sweetener
+sweet_0004,ing_acesulfame_potassium,Acesulfame Potassium,Acesulfame K,label_variant,US,cite_0017,reviewed,flag_sweetener,FDA page says labels may show this variant
+sweet_0005,ing_acesulfame_potassium,Acesulfame Potassium,Ace-K,label_variant,US,cite_0017,reviewed,flag_sweetener,FDA page says labels may show this variant
+sweet_0006,ing_sucralose,Sucralose,Sucralose,authorized_food_additive,US,cite_0017,reviewed,flag_sweetener,FDA page says this is approved for use in food as a sweetener
+sweet_0007,ing_neotame,Neotame,Neotame,authorized_food_additive,US,cite_0017,reviewed,flag_sweetener,FDA page says this is approved for use in food as a sweetener
+sweet_0008,ing_advantame,Advantame,Advantame,authorized_food_additive,US,cite_0017,reviewed,flag_sweetener,FDA page says this is approved for use in food as a sweetener
+sweet_0009,ing_saccharin,Saccharin,Saccharin,authorized_food_additive,US,cite_0017,reviewed,flag_sweetener,FDA page says this is approved under certain conditions
+sweet_0010,ing_stevia,Steviol Glycosides,Steviol Glycosides,high_purity_stevia_sweetener,US,cite_0017,reviewed,flag_sweetener,FDA page discusses high-purity steviol glycosides as sweeteners
+sweet_0011,ing_stevia,Steviol Glycosides,Rebaudioside A,steviol_glycoside,US,cite_0017,reviewed,flag_sweetener,FDA page names Rebaudioside A as an example
+sweet_0012,ing_stevia,Steviol Glycosides,Stevioside,steviol_glycoside,US,cite_0017,reviewed,flag_sweetener,FDA page names Stevioside as an example
+sweet_0013,ing_monk_fruit,Monk Fruit Extract,Monk Fruit Extract,fruit_based_sweetener,US,cite_0017,reviewed,flag_sweetener,FDA page discusses monk fruit extract sweetener notices
+sweet_0014,ing_monk_fruit,Monk Fruit Extract,Luo Han Guo,label_variant,US,cite_0017,reviewed,flag_sweetener,FDA page lists Luo Han Guo as another name for monk fruit
+sweet_0015,ing_thaumatin,Thaumatin,Thaumatin,fruit_based_sweetener,US,cite_0017,reviewed,flag_sweetener,FDA page discusses thaumatin sweetener notices
+sweet_0016,ing_sorbitol,Sorbitol,Sorbitol,sugar_alcohol,US,cite_0017,reviewed,flag_sugar_alcohol,FDA page lists this as a sugar alcohol example
+sweet_0017,ing_xylitol,Xylitol,Xylitol,sugar_alcohol,US,cite_0017,reviewed,flag_sugar_alcohol,FDA page lists this as a sugar alcohol example
+sweet_0018,ing_erythritol,Erythritol,Erythritol,sugar_alcohol,US,cite_0017,reviewed,flag_sugar_alcohol,FDA page lists this as a sugar alcohol example
+sweet_0019,ing_mannitol,Mannitol,Mannitol,sugar_alcohol,US,cite_0017,reviewed,flag_sugar_alcohol,FDA page lists this as a sugar alcohol example
+sweet_0020,ing_maltitol,Maltitol,Maltitol,sugar_alcohol,US,cite_0017,reviewed,flag_sugar_alcohol,FDA page lists this as a sugar alcohol example
+sweet_0021,ing_allulose,Allulose,D-Allulose,different_metabolism_sugar,US,cite_0017,reviewed,flag_sweetener,FDA page says it evaluated notices for D-allulose
+sweet_0022,ing_allulose,Allulose,D-Psicose,label_variant,US,cite_0017,reviewed,flag_sweetener,FDA page says D-allulose is also referred to as D-psicose
+sweet_0023,ing_tagatose,Tagatose,D-Tagatose,different_metabolism_sugar,US,cite_0017,reviewed,flag_sweetener,FDA page says it evaluated notices for D-tagatose
+sweet_0024,ing_isomaltulose,Isomaltulose,Isomaltulose,different_metabolism_sugar,US,cite_0017,reviewed,flag_sweetener,FDA page says it evaluated notices for isomaltulose

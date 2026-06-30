@@ -1,0 +1,37 @@
+term_id,ingredient_id,canonical_allergen,detected_term,term_type,jurisdictions,citation_id,review_status,app_action,notes
+allterm_0001,ing_milk_allergen,Milk,milk,plain_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA and Health Canada both list milk as major or priority allergen
+allterm_0002,ing_milk_allergen,Milk,casein,derived_term,US|Canada,cite_0010,reviewed,flag_allergen,FDA example labeling includes allergen source in parentheses such as milk
+allterm_0003,ing_milk_allergen,Milk,whey,derived_term,US|Canada,cite_0010,reviewed,flag_allergen,FDA example labeling includes whey milk
+allterm_0004,ing_milk_allergen,Milk,buttermilk,derived_term,US|Canada,cite_0010,reviewed,flag_allergen,FDA notes common or usual name may identify allergen source
+allterm_0005,ing_egg_allergen,Egg,egg,plain_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA and Health Canada both list eggs as major or priority allergen
+allterm_0006,ing_egg_allergen,Egg,albumen,derived_term,US|Canada,cite_0010,reviewed,flag_allergen,Common egg-derived label term requiring review in app logic
+allterm_0007,ing_fish_allergen,Fish,fish,plain_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA lists fish and requires species declaration
+allterm_0008,ing_fish_allergen,Fish,cod,species_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA examples include cod as species style declaration
+allterm_0009,ing_fish_allergen,Fish,flounder,species_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA examples include flounder as species style declaration
+allterm_0010,ing_shellfish_allergen,Crustacean Shellfish,shrimp,species_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA examples include shrimp for Crustacean shellfish
+allterm_0011,ing_shellfish_allergen,Crustacean Shellfish,crab,species_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA examples include crab for Crustacean shellfish
+allterm_0012,ing_shellfish_allergen,Crustacean Shellfish,lobster,species_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA examples include lobster for Crustacean shellfish
+allterm_0013,ing_tree_nut_allergen,Tree Nuts,tree nuts,group_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA lists tree nuts and requires type declaration
+allterm_0014,ing_tree_nut_allergen,Tree Nuts,almond,type_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA examples include almonds as tree nut type
+allterm_0015,ing_tree_nut_allergen,Tree Nuts,pecan,type_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA examples include pecans as tree nut type
+allterm_0016,ing_tree_nut_allergen,Tree Nuts,walnut,type_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA examples include walnuts as tree nut type
+allterm_0017,ing_tree_nut_allergen,Tree Nuts,cashew,type_name,US|Canada,cite_0010,reviewed,flag_allergen,Tree nut type; verify country-specific tree nut examples during deeper pass
+allterm_0018,ing_tree_nut_allergen,Tree Nuts,hazelnut,type_name,US|Canada,cite_0010,reviewed,flag_allergen,Tree nut type; verify country-specific tree nut examples during deeper pass
+allterm_0019,ing_peanut_allergen,Peanut,peanut,plain_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA and Health Canada both list peanuts as major or priority allergen
+allterm_0020,ing_peanut_allergen,Peanut,groundnut,synonym,US|Canada,cite_0014,reviewed,flag_allergen,Useful synonym; app should still show Peanut as display allergen
+allterm_0021,ing_wheat_allergen,Wheat,wheat,plain_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA and Health Canada both list wheat related allergen sources
+allterm_0022,ing_wheat_allergen,Wheat,flour,ambiguous_term,US|Canada,cite_0010,reviewed,flag_review,Only flag as wheat when context or label source confirms wheat flour
+allterm_0023,ing_wheat_allergen,Wheat,wheat flour,derived_term,US|Canada,cite_0010,reviewed,flag_allergen,FDA example includes flour wheat labeling
+allterm_0024,ing_wheat_allergen,Wheat,triticale,related_grain,Canada,cite_0014,reviewed,flag_allergen,Health Canada lists wheat and triticale
+allterm_0025,ing_soy_allergen,Soy,soy,plain_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA lists soybeans and Health Canada lists soy
+allterm_0026,ing_soy_allergen,Soy,soybeans,plain_name,US|Canada,cite_0010,reviewed,flag_allergen,FDA major allergen source term is soybeans
+allterm_0027,ing_soy_allergen,Soy,soy lecithin,derived_term,US|Canada,cite_0010,reviewed,flag_allergen,FDA example includes lecithin soy allergen-source declaration
+allterm_0028,ing_sesame_allergen,Sesame,sesame,plain_name,US|Canada,cite_0011,reviewed,flag_allergen,Sesame is US major allergen and Canadian priority allergen
+allterm_0029,ing_sesame_allergen,Sesame,tahini,derived_term,US|Canada,cite_0014,reviewed,flag_allergen,Sesame paste term; app should display Sesame as allergen family
+allterm_0030,ing_sesame_allergen,Sesame,sesame seeds,plain_name,US|Canada,cite_0014,reviewed,flag_allergen,Health Canada lists sesame seeds
+allterm_0031,ing_mustard_allergen,Mustard,mustard,plain_name,Canada,cite_0014,reviewed,flag_allergen,Health Canada lists mustard as priority allergen
+allterm_0032,ing_mustard_allergen,Mustard,mustard seed,derived_term,Canada,cite_0014,reviewed,flag_allergen,Mustard seed term should map to Mustard allergen in Canada
+allterm_0033,ing_sulfites_allergen,Sulfites,sulfites,group_name,US|Canada,cite_0013,reviewed,flag_allergen_or_sensitivity,FDA has sulfite declaration threshold; Health Canada lists sulphites
+allterm_0034,ing_sulfites_allergen,Sulfites,sulphites,spelling_variant,Canada,cite_0014,reviewed,flag_allergen_or_sensitivity,Canadian spelling appears on Health Canada page
+allterm_0035,ing_sulfites_allergen,Sulfites,sodium metabisulfite,specific_sulfite,US|Canada,cite_0013,reviewed,flag_allergen_or_sensitivity,FDA notes sulfiting agents including sodium bisulfite; exact additive status still separate
+allterm_0036,ing_sulfites_allergen,Sulfites,sulfur dioxide,specific_sulfite,US|Canada,cite_0013,reviewed,flag_allergen_or_sensitivity,Sulfiting agent family term; exact additive permission still separate

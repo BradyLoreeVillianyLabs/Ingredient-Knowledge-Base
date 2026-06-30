@@ -1,0 +1,16 @@
+rule_id,rule_name,rule_type,pattern,replacement_or_action,priority,notes,review_status
+parse_0001,Remove Ingredients Header,cleanup,^(ingredients|ingredient list|contains)[:\- ]+,remove,1,Strip common label heading,draft
+parse_0002,Normalize Bullets,cleanup,[•·●],comma,2,Convert bullets to separators,draft
+parse_0003,Normalize Semicolons,cleanup,;,comma,3,Convert semicolons to separators,draft
+parse_0004,Normalize Slashes,cleanup,\s*/\s*,slash_separator,20,Use cautiously because slashes can appear in alternatives,draft
+parse_0005,Preserve Parenthetical Ingredients,structure,\(([^)]*)\),extract_nested,10,Extract nested sub-ingredients without losing parent ingredient,draft
+parse_0006,Preserve Bracketed Ingredients,structure,\[([^\]]*)\],extract_nested,11,Extract bracketed sub-ingredients,draft
+parse_0007,Contains Statement,structure,contains:?\s*(.*),allergen_section,5,Parse allergen contains statements separately,needs_source
+parse_0008,May Contain Statement,structure,may contain:?\s*(.*),trace_allergen_section,6,Parse precautionary allergen statements separately,needs_source
+parse_0009,Percent Declaration,cleanup,\d+(\.\d+)?\s*%,keep_with_term,25,Keep percent declarations attached for review,draft
+parse_0010,Organic Prefix,normalization,^organic\s+,strip_modifier,30,Store organic as modifier but match base ingredient,draft
+parse_0011,Dried Prefix,normalization,^dried\s+,keep_modifier,31,Dried may matter for display but base ingredient still useful,draft
+parse_0012,Dehydrated Prefix,normalization,^dehydrated\s+,keep_modifier,32,Useful for onion garlic powders,draft
+parse_0013,Less Than Statement,structure,less than \d+(\.\d+)?% of:?\s*,minor_ingredient_section,8,Mark following terms as minor ingredients,draft
+parse_0014,And Or Split,cleanup,\s+(and/or|and|or)\s+,conditional_separator,40,Use only inside obvious ingredient lists,draft
+parse_0015,Colon Sublist,structure,:\s*,sublist_separator,15,Useful for vitamin blends and seasoning lists,draft

@@ -1,0 +1,61 @@
+quip_id,ingredient_id,canonical_name,quip_type,quip_text,tone,show_context,review_status
+quip_0001,ing_water,Water,one_liner,Water keeps it fluid. Literally.,light,ingredient_detail,draft
+quip_0002,ing_salt,Salt,one_liner,Salt is the original flavor influencer.,light,ingredient_detail,draft
+quip_0003,ing_sugar,Sugar,one_liner,Sugar shows up and suddenly everyone is having dessert feelings.,light,ingredient_detail,draft
+quip_0004,ing_wheat_flour,Wheat Flour,one_liner,Wheat flour is basically architecture for bread.,light,ingredient_detail,draft
+quip_0005,ing_butter,Butter,one_liner,Butter does not fix everything but it keeps applying for the job.,light,ingredient_detail,draft
+quip_0006,ing_olive_oil,Olive Oil,one_liner,Olive oil walks into a salad and immediately becomes classy.,light,ingredient_detail,draft
+quip_0007,ing_milk,Milk,one_liner,Milk brings calcium and main-character cereal energy.,light,ingredient_detail,draft
+quip_0008,ing_egg,Egg,one_liner,Eggs bind ingredients and breakfast opinions.,light,ingredient_detail,draft
+quip_0009,ing_baking_soda,Baking Soda,one_liner,Baking soda rises to the occasion after meeting acid.,light,ingredient_detail,draft
+quip_0010,ing_yeast,Yeast,one_liner,Yeast is tiny but dramatic enough to lift an entire loaf.,light,ingredient_detail,draft
+quip_0011,ing_vanilla,Vanilla,one_liner,Vanilla is only boring to people who have never met a vanilla orchid.,light,ingredient_detail,draft
+quip_0012,ing_cocoa_powder,Cocoa Powder,one_liner,Cocoa powder is chocolate before it gets dressed up.,light,ingredient_detail,draft
+quip_0013,ing_cinnamon,Cinnamon,one_liner,Cinnamon makes toast feel like it got invited to a holiday party.,light,ingredient_detail,draft
+quip_0014,ing_black_pepper,Black Pepper,one_liner,Black pepper sneezed its way into culinary history.,light,ingredient_detail,draft
+quip_0015,ing_garlic,Garlic,one_liner,Garlic is what vampires call a hostile work environment.,light,ingredient_detail,draft
+quip_0016,ing_onion,Onion,one_liner,Onions are proof that vegetables can have emotional range.,light,ingredient_detail,draft
+quip_0017,ing_vinegar,Vinegar,one_liner,Vinegar is wine that chose a sharper career path.,light,ingredient_detail,draft
+quip_0018,ing_honey,Honey,one_liner,Honey is what bees call teamwork with snacks.,light,ingredient_detail,draft
+quip_0019,ing_citric_acid,Citric Acid,one_liner,Citric acid brings the sour face so candy can feel alive.,light,ingredient_detail,draft
+quip_0020,ing_ascorbic_acid,Ascorbic Acid,one_liner,Ascorbic acid is vitamin C wearing its lab coat.,light,ingredient_detail,draft
+quip_0021,ing_sodium_benzoate,Sodium Benzoate,one_liner,Sodium benzoate is the bouncer at the acidic-food nightclub.,light,ingredient_detail,draft
+quip_0022,ing_potassium_sorbate,Potassium Sorbate,one_liner,Potassium sorbate tells mold not tonight.,light,ingredient_detail,draft
+quip_0023,ing_calcium_propionate,Calcium Propionate,one_liner,Calcium propionate is bread's tiny anti-mold security guard.,light,ingredient_detail,draft
+quip_0024,ing_sodium_nitrite,Sodium Nitrite,one_liner,Sodium nitrite is cured meat's color stylist with paperwork.,light,ingredient_detail,draft
+quip_0025,ing_sulfur_dioxide,Sulfur Dioxide,one_liner,Sulfur dioxide is very committed to stopping browning drama.,light,ingredient_detail,draft
+quip_0026,ing_bha,BHA,one_liner,BHA is short enough to sound mysterious and preservative enough to need citations.,light,ingredient_detail,draft
+quip_0027,ing_bht,BHT,one_liner,BHT sounds like a robot but works in the snack aisle.,light,ingredient_detail,draft
+quip_0028,ing_tbhq,TBHQ,one_liner,TBHQ is the kind of acronym that makes chips look like they hired a lawyer.,light,ingredient_detail,draft
+quip_0029,ing_xanthan_gum,Xanthan Gum,one_liner,Xanthan gum thickens things and conversations about gluten-free baking.,light,ingredient_detail,draft
+quip_0030,ing_guar_gum,Guar Gum,one_liner,Guar gum is tiny bean magic with a viscosity agenda.,light,ingredient_detail,draft
+quip_0031,ing_carrageenan,Carrageenan,one_liner,Carrageenan came from seaweed and refuses to let your plant milk separate.,light,ingredient_detail,draft
+quip_0032,ing_soy_lecithin,Soy Lecithin,one_liner,Soy lecithin is the food world's couples counselor for oil and water.,light,ingredient_detail,draft
+quip_0033,ing_sunflower_lecithin,Sunflower Lecithin,one_liner,Sunflower lecithin keeps things together with sunny professionalism.,light,ingredient_detail,draft
+quip_0034,ing_msg,Monosodium Glutamate,one_liner,MSG walks in and the soup suddenly has bass.,light,ingredient_detail,draft
+quip_0035,ing_disodium_inosinate,Disodium Inosinate,one_liner,Disodium inosinate is MSG's backup singer for savory hits.,light,ingredient_detail,draft
+quip_0036,ing_yeast_extract,Yeast Extract,one_liner,Yeast extract is yeast after it went to flavor school.,light,ingredient_detail,draft
+quip_0037,ing_natural_flavors,Natural Flavors,one_liner,Natural flavors are the mystery novel of ingredient labels.,light,ingredient_detail,draft
+quip_0038,ing_artificial_flavors,Artificial Flavors,one_liner,Artificial flavors are chemistry doing impressions.,light,ingredient_detail,draft
+quip_0039,ing_red_40,Red 40,one_liner,Red 40 never enters quietly.,light,ingredient_detail,draft
+quip_0040,ing_yellow_5,Yellow 5,one_liner,Yellow 5 brings sunshine with a regulatory footnote.,light,ingredient_detail,draft
+quip_0041,ing_blue_1,Blue 1,one_liner,Blue 1 is why candy sometimes looks like a tiny swimming pool.,light,ingredient_detail,draft
+quip_0042,ing_annatto,Annatto,one_liner,Annatto gives cheese a glow-up without needing a spotlight.,light,ingredient_detail,draft
+quip_0043,ing_beta_carotene,Beta-Carotene,one_liner,Beta-carotene is carrot's orange business card.,light,ingredient_detail,draft
+quip_0044,ing_turmeric,Turmeric,one_liner,Turmeric stains first and answers questions later.,light,ingredient_detail,draft
+quip_0045,ing_beet_juice_color,Beet Juice Color,one_liner,Beet juice color is nature's red marker with better branding.,light,ingredient_detail,draft
+quip_0046,ing_sucralose,Sucralose,one_liner,Sucralose is sugar's very intense cousin.,light,ingredient_detail,draft
+quip_0047,ing_aspartame,Aspartame,one_liner,Aspartame is tiny on the label and big in the discourse.,light,ingredient_detail,draft
+quip_0048,ing_erythritol,Erythritol,one_liner,Erythritol sounds like a wizard spell for low-sugar snacks.,light,ingredient_detail,draft
+quip_0049,ing_xylitol,Xylitol,one_liner,Xylitol is sweet to humans and absolutely not a dog treat.,light,ingredient_detail,draft
+quip_0050,ing_stevia,Stevia,one_liner,Stevia brought leaves to a sweetener fight.,light,ingredient_detail,draft
+quip_0051,ing_milk_allergen,Milk,one_liner,Milk is great in cereal but terrible at keeping a low allergen profile.,light,ingredient_detail,draft
+quip_0052,ing_egg_allergen,Egg,one_liner,Eggs are versatile enough to be breakfast and a label alert.,light,ingredient_detail,draft
+quip_0053,ing_peanut_allergen,Peanut,one_liner,Peanuts are legumes with nut-level fame.,light,ingredient_detail,draft
+quip_0054,ing_tree_nut_allergen,Tree Nuts,one_liner,Tree nuts travel as a group but still need name tags.,light,ingredient_detail,draft
+quip_0055,ing_soy_allergen,Soy,one_liner,Soy can hide in more places than a teenager avoiding chores.,light,ingredient_detail,draft
+quip_0056,ing_wheat_allergen,Wheat,one_liner,Wheat is the gluten VIP section.,light,ingredient_detail,draft
+quip_0057,ing_sesame_allergen,Sesame,one_liner,Sesame is tiny but important enough to get legal attention.,light,ingredient_detail,draft
+quip_0058,ing_mustard_allergen,Mustard,one_liner,Mustard brings heat and occasionally paperwork.,light,ingredient_detail,draft
+quip_0059,ing_sulfites_allergen,Sulfites,one_liner,Sulfites are small but labels take them seriously.,light,ingredient_detail,draft
+quip_0060,ing_caffeine,Caffeine,one_liner,Caffeine is the bean's way of saying good morning loudly.,light,ingredient_detail,draft

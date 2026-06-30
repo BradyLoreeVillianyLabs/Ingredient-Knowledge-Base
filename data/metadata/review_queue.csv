@@ -1,0 +1,11 @@
+queue_id,priority,target_file,target_row_or_scope,task_type,reason,assigned_to,status
+rq_0001,P0,data/metadata/15_regulatory_status.csv,all Canada rows,source_verification,Canadian app defaults need verified regulatory wording,,open
+rq_0002,P0,data/safety/06_common_allergens.csv,all rows,source_verification,Allergen rules must be jurisdiction-aware before public release,,open
+rq_0003,P0,data/metadata/15_regulatory_status.csv,synthetic colors,source_verification,Color additive status is high-attention and region-specific,,open
+rq_0004,P0,data/metadata/16_ingredient_facts.csv,all safety facts,claim_review,Public facts must avoid medical overclaims,,open
+rq_0005,P1,data/metadata/14_ocr_aliases.csv,top OCR terms,qa_review,OCR alias conflicts can cause wrong ingredient matches,,open
+rq_0006,P1,data/compounds/13_food_compounds.csv,top 100 compounds,source_enrichment,Add PubChem IDs and compound synonyms,,open
+rq_0007,P1,data/generated/ingredient_frequency.csv,top 1000 mined terms,curation,Promote real label terms into curated lists,,open
+rq_0008,P1,data/generated/ingredient_combinations.csv,top 1000 combinations,curation,Use real co-occurrence to improve dashboard insights,,open
+rq_0009,P2,data/core/01_core_ingredients.csv,row expansion,content_expansion,Grow toward 500 app-ready core ingredients,,open
+rq_0010,P2,data/metadata/16_ingredient_facts.csv,row expansion,content_expansion,Grow toward 5000 concise facts,,open

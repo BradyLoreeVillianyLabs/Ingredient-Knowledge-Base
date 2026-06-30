@@ -1,0 +1,16 @@
+section_id,section_name,section_order,default_state,description,data_sources,app_copy_template,review_status
+sec_0001,Scan Summary,1,expanded,Fast overview of OCR results and match confidence,label_analysis_results|dashboard_metrics,"Detected {matched_ingredient_count} matched ingredients and {unmatched_ingredient_count} unmatched terms.",draft
+sec_0002,Ingredient Breakdown,2,expanded,List of matched ingredients with purposes and categories,evidence_packs,"{canonical_name}: {functional_purpose}.",draft
+sec_0003,Potential Allergen Flags,3,expanded,Jurisdiction-aware allergen notices,evidence_packs|regulatory_status,"Potential allergen-related terms detected for {jurisdiction}: {allergen_terms}.",needs_source
+sec_0004,Additives and Processing Aids,4,collapsed,Additive categories detected in label,evidence_packs|dashboard_metrics,"This scan includes {additive_count} additive-category ingredients.",draft
+sec_0005,Sweeteners,5,collapsed,Nutritive and non-nutritive sweeteners detected,evidence_packs,"Sweetener terms detected: {sweetener_terms}.",draft
+sec_0006,Colors,6,collapsed,Artificial and natural colors detected,evidence_packs|regulatory_status,"Color ingredients detected: {color_terms}.",needs_source
+sec_0007,Preservatives,7,collapsed,Preservatives detected and their general purpose,evidence_packs,"Preservative terms detected: {preservative_terms}.",needs_source
+sec_0008,Flavor System,8,collapsed,Flavor enhancers natural/artificial flavors and extracts,evidence_packs,"Flavor-related terms detected: {flavor_terms}.",draft
+sec_0009,Texture System,9,collapsed,Gums starches emulsifiers stabilizers thickeners,evidence_packs,"Texture ingredients detected: {texture_terms}.",draft
+sec_0010,Nutrition-Related Ingredients,10,collapsed,Vitamins minerals proteins fibers and amino acids,evidence_packs,"Nutrition-related ingredients detected: {nutrition_terms}.",draft
+sec_0011,Historical Use,11,collapsed,How long humans have consumed ingredients or their source forms,historical_use,"Some ingredients are ancient food staples; others are modern isolated additives.",draft
+sec_0012,Interesting Facts,12,collapsed,Short app-friendly facts,ingredient_facts,"Tap an ingredient to see facts and evidence notes.",draft
+sec_0013,Regulatory Notes,13,collapsed,Jurisdiction-specific allowed restricted warning status,regulatory_status|citation_registry,"Regulatory status varies by jurisdiction and product use.",needs_source
+sec_0014,Uncertainty and Review Notes,14,expanded,Explain low confidence and draft statuses,label_analysis_results|evidence_packs,"Some matches or claims need review. Do not treat this scan as medical advice.",draft
+sec_0015,Unknown Terms,15,collapsed,Unmatched OCR terms for learning loop,label_analysis_results,"Unknown terms can be added to the ingredient review queue.",draft
